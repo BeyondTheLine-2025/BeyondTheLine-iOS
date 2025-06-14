@@ -61,6 +61,7 @@
 		3D9C8A742DFDA9DB00FCDD61 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A732DFDA9DB00FCDD61 /* ModuleFactory.swift */; };
 		3D9C8A762DFDACC200FCDD61 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A752DFDACC200FCDD61 /* AppCoordinator.swift */; };
 		3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A772DFDACF000FCDD61 /* RootNavigationView.swift */; };
+		3DC8D03A2DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8D0392DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +122,7 @@
 		3D9C8A732DFDA9DB00FCDD61 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 		3D9C8A752DFDACC200FCDD61 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3D9C8A772DFDACF000FCDD61 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		3DC8D0392DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineNavigationBarType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 				3D9C892F2DFC666000FCDD61 /* BeyondTheLineButtonState.swift */,
 				3D9C89312DFC6F3700FCDD61 /* BeyondTheLineSelectedButtonState.swift */,
 				3D9C89D22DFD19A800FCDD61 /* BeyondTheLineBottomSheetType.swift */,
+				3DC8D0392DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift */,
 			);
 			path = Foundations;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 				3D28D75B2DF3366400136E48 /* Persistence.swift in Sources */,
 				3D9C89EB2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift in Sources */,
 				3D9C8A082DFD207300FCDD61 /* SimulatorView.swift in Sources */,
+				3DC8D03A2DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift in Sources */,
 				3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */,
 				3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */,
 				3D9C8A062DFD206B00FCDD61 /* SelectCustomerView.swift in Sources */,

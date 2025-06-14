@@ -23,4 +23,5 @@ extension Font {
     static var body1: Font = .custom(FontName.pretendardRegular.rawValue, size: 16)
     static var body2: Font = .custom(FontName.pretendardBold.rawValue, size: 16)
     static var caption1: Font = .custom(FontName.pretendardRegular.rawValue, size: 14)
+    static var icon: Font = .custom(FontName.pretendardSemiBold.rawValue, size: 16)
 }
