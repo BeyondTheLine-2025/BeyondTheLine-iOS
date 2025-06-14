@@ -57,6 +57,10 @@
 		3D9C8A5D2DFD9B5000FCDD61 /* LastQuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A5C2DFD9B5000FCDD61 /* LastQuizModel.swift */; };
 		3D9C8A5F2DFD9B5F00FCDD61 /* SummaryScriptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A5E2DFD9B5F00FCDD61 /* SummaryScriptModel.swift */; };
 		3D9C8A612DFD9B6800FCDD61 /* SummaryScriptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A602DFD9B6800FCDD61 /* SummaryScriptViewModel.swift */; };
+		3D9C8A712DFDA8B300FCDD61 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A702DFDA8B300FCDD61 /* AppRoute.swift */; };
+		3D9C8A742DFDA9DB00FCDD61 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A732DFDA9DB00FCDD61 /* ModuleFactory.swift */; };
+		3D9C8A762DFDACC200FCDD61 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A752DFDACC200FCDD61 /* AppCoordinator.swift */; };
+		3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A772DFDACF000FCDD61 /* RootNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +117,10 @@
 		3D9C8A5C2DFD9B5000FCDD61 /* LastQuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizModel.swift; sourceTree = "<group>"; };
 		3D9C8A5E2DFD9B5F00FCDD61 /* SummaryScriptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptModel.swift; sourceTree = "<group>"; };
 		3D9C8A602DFD9B6800FCDD61 /* SummaryScriptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptViewModel.swift; sourceTree = "<group>"; };
+		3D9C8A702DFDA8B300FCDD61 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		3D9C8A732DFDA9DB00FCDD61 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		3D9C8A752DFDACC200FCDD61 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3D9C8A772DFDACF000FCDD61 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				3D28D7512DF3366400136E48 /* BeyondTheLine_iOSApp.swift */,
+				3D9C8A722DFDA97400FCDD61 /* Factory */,
+				3D9C8A622DFD9EF200FCDD61 /* Coordinator */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -489,6 +499,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3D9C8A622DFD9EF200FCDD61 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3D9C8A702DFDA8B300FCDD61 /* AppRoute.swift */,
+				3D9C8A752DFDACC200FCDD61 /* AppCoordinator.swift */,
+				3D9C8A772DFDACF000FCDD61 /* RootNavigationView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3D9C8A722DFDA97400FCDD61 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				3D9C8A732DFDA9DB00FCDD61 /* ModuleFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -594,6 +622,7 @@
 				3D9C8A5D2DFD9B5000FCDD61 /* LastQuizModel.swift in Sources */,
 				3D2461222DFBA0A700D9E649 /* BeyondTheLineSelectedButton.swift in Sources */,
 				3D9C89D12DFD194900FCDD61 /* SymbolLiterals.swift in Sources */,
+				3D9C8A762DFDACC200FCDD61 /* AppCoordinator.swift in Sources */,
 				3D28D7582DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodeld in Sources */,
 				3D9C89E72DFD1F0900FCDD61 /* BeyondTheLineNavigationBar.swift in Sources */,
 				3D9C8A0C2DFD208400FCDD61 /* LastQuizView.swift in Sources */,
@@ -605,6 +634,7 @@
 				3D2461242DFBA0B900D9E649 /* BeyondTheLineProgressIndicator.swift in Sources */,
 				3D9C892E2DFC60CA00FCDD61 /* Font+.swift in Sources */,
 				3D9C89E42DFD1B8800FCDD61 /* Text+.swift in Sources */,
+				3D9C8A712DFDA8B300FCDD61 /* AppRoute.swift in Sources */,
 				3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */,
 				3D9C8A572DFD9AD700FCDD61 /* BridgeModel.swift in Sources */,
 				3D28D75A2DF3366400136E48 /* ContentView.swift in Sources */,
@@ -619,11 +649,13 @@
 				3D9C89EB2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift in Sources */,
 				3D9C8A082DFD207300FCDD61 /* SimulatorView.swift in Sources */,
 				3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */,
+				3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */,
 				3D9C8A062DFD206B00FCDD61 /* SelectCustomerView.swift in Sources */,
 				3D9C8A612DFD9B6800FCDD61 /* SummaryScriptViewModel.swift in Sources */,
 				3D9C8A2F2DFD22D900FCDD61 /* SelectCustomerSubView.swift in Sources */,
 				3D9C89E92DFD1F1700FCDD61 /* BeyondTheLineSpeechBubble.swift in Sources */,
 				3D9C8A592DFD9ADE00FCDD61 /* BridgeSubView.swift in Sources */,
+				3D9C8A742DFDA9DB00FCDD61 /* ModuleFactory.swift in Sources */,
 				3D9C8A5F2DFD9B5F00FCDD61 /* SummaryScriptModel.swift in Sources */,
 				3D9C8A512DFD23FF00FCDD61 /* SimulatorSubView.swift in Sources */,
 				3D2461202DFBA08700D9E649 /* BeyondTheLineBottomSheet.swift in Sources */,

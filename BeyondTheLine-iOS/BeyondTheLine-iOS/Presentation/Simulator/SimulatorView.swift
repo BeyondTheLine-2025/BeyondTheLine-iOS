@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct SimulatorView: View {
+    @EnvironmentObject var coordinator: AppCoordinator
+    @ObservedObject var viewModel: SimulatorViewModel
+
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    SimulatorView()
+    SimulatorView(viewModel: SimulatorViewModel())
 }

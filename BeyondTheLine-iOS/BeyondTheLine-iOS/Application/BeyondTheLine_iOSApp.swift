@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct BeyondTheLine_iOSApp: App {
-    let persistenceController = PersistenceController.shared
+    @StateObject private var coordinator = AppCoordinator()
+    private let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootNavigationView(moduleFactory: ModuleFactory.shared)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(coordinator)
         }
     }
 }

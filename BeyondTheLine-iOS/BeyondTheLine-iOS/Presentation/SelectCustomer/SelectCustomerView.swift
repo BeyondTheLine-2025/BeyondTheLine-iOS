@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct SelectCustomerView: View {
+    @EnvironmentObject var coordinator: AppCoordinator
+    @ObservedObject var viewModel: SelectCustomerViewModel
+
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    SelectCustomerView()
+    SelectCustomerView(viewModel: SelectCustomerViewModel())
 }

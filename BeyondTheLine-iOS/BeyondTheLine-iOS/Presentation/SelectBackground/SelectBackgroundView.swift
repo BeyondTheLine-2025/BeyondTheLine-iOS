@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct SelectBackgroundView: View {
+    @EnvironmentObject var coordinator: AppCoordinator
+    @ObservedObject var viewModel: SelectBackgroundViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("SelectBackgroundView")
     }
 }
 
 #Preview {
-    SelectBackgroundView()
+    SelectBackgroundView(viewModel: SelectBackgroundViewModel())
 }
