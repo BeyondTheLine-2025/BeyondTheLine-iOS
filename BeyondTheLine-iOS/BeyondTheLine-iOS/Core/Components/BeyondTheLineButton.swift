@@ -27,7 +27,7 @@ struct BeyondTheLineButton: View {
             Text(title)
                 .font(.subTitle)
                 .padding(10)
-                .frame(width: .infinity, height: 50)
+                .frame(maxWidth: .infinity, maxHeight: 50)
                 .foregroundStyle(buttonState.titleColor)
                 .background(buttonState.backgroundColor)
                 .clipShape(RoundedRectangle(cornerRadius: 12))
@@ -36,6 +36,7 @@ struct BeyondTheLineButton: View {
                         .stroke(buttonState.borderColor, lineWidth: 1)
                 )
         }
+        .padding(.horizontal, 18)
         .disabled(buttonState == .disabled)
     }
 }
