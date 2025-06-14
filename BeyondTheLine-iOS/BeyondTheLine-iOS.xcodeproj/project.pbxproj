@@ -20,10 +20,11 @@
 		3D28D7682DF338A500136E48 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D7672DF338A500136E48 /* Colors.xcassets */; };
 		3D28D7752DF4053400136E48 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D7742DF4053400136E48 /* .swiftlint.yml */; };
 		3D9C89242DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */; };
-		3D9C89272DFC5FB800FCDD61 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89252DFC5FB800FCDD61 /* Pretendard-Medium.otf */; };
 		3D9C89282DFC5FB800FCDD61 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */; };
 		3D9C892A2DFC5FE800FCDD61 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */; };
 		3D9C892E2DFC60CA00FCDD61 /* Font+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C892D2DFC60CA00FCDD61 /* Font+.swift */; };
+		3D9C89302DFC666000FCDD61 /* BeyondTheLineButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C892F2DFC666000FCDD61 /* BeyondTheLineButtonState.swift */; };
+		3D9C89322DFC6F3700FCDD61 /* BeyondTheLineSelectedButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C89312DFC6F3700FCDD61 /* BeyondTheLineSelectedButtonState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,11 +43,12 @@
 		3D28D7672DF338A500136E48 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3D28D7742DF4053400136E48 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
-		3D9C89252DFC5FB800FCDD61 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		3D9C892B2DFC603A00FCDD61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3D9C892D2DFC60CA00FCDD61 /* Font+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+.swift"; sourceTree = "<group>"; };
+		3D9C892F2DFC666000FCDD61 /* BeyondTheLineButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineButtonState.swift; sourceTree = "<group>"; };
+		3D9C89312DFC6F3700FCDD61 /* BeyondTheLineSelectedButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSelectedButtonState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +178,6 @@
 			children = (
 				3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */,
 				3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */,
-				3D9C89252DFC5FB800FCDD61 /* Pretendard-Medium.otf */,
 				3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */,
 			);
 			path = Fonts;
@@ -186,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				3D9C892D2DFC60CA00FCDD61 /* Font+.swift */,
+				3D9C892F2DFC666000FCDD61 /* BeyondTheLineButtonState.swift */,
+				3D9C89312DFC6F3700FCDD61 /* BeyondTheLineSelectedButtonState.swift */,
 			);
 			path = Foundations;
 			sourceTree = "<group>";
@@ -255,7 +258,6 @@
 				3D28D7752DF4053400136E48 /* .swiftlint.yml in Resources */,
 				3D9C892A2DFC5FE800FCDD61 /* Pretendard-Bold.otf in Resources */,
 				3D28D7682DF338A500136E48 /* Colors.xcassets in Resources */,
-				3D9C89272DFC5FB800FCDD61 /* Pretendard-Medium.otf in Resources */,
 				3D9C89282DFC5FB800FCDD61 /* Pretendard-Regular.otf in Resources */,
 				3D9C89242DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf in Resources */,
 				3D28D7562DF3366400136E48 /* Preview Assets.xcassets in Resources */,
@@ -296,9 +298,11 @@
 				3D2461242DFBA0B900D9E649 /* BeyondTheLineProgressIndicator.swift in Sources */,
 				3D9C892E2DFC60CA00FCDD61 /* Font+.swift in Sources */,
 				3D28D75A2DF3366400136E48 /* ContentView.swift in Sources */,
+				3D9C89302DFC666000FCDD61 /* BeyondTheLineButtonState.swift in Sources */,
 				3D24611E2DFB9FAA00D9E649 /* BeyondTheLineButton.swift in Sources */,
 				3D28D75B2DF3366400136E48 /* Persistence.swift in Sources */,
 				3D2461202DFBA08700D9E649 /* BeyondTheLineBottomSheet.swift in Sources */,
+				3D9C89322DFC6F3700FCDD61 /* BeyondTheLineSelectedButtonState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

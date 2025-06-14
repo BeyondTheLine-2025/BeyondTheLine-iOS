@@ -7,53 +7,6 @@
 
 import SwiftUI
 
-// MARK: - Button State Enum
-
-enum BeyondTheLineButtonState {
-    case white
-    case abled
-    case disabled
-    case success
-    case wrong
-    
-    var backgroundColor: Color {
-        switch self {
-        case .white:
-            return .btlWhite
-        case .abled:
-            return .btlBlue
-        case .disabled:
-            return .btlGray2
-        case .success:
-            return .btlGreen
-        case .wrong:
-            return .btlRed
-        }
-    }
-    
-    var titleColor: Color {
-        switch self {
-        case .abled, .success, .wrong:
-            return .btlWhite
-        case .disabled:
-            return .btlGray1
-        case .white:
-            return .btlBlue
-        }
-    }
-    
-    var borderColor: Color {
-        switch self {
-        case .white:
-            return .btlBlue
-        case .abled, .disabled, .success, .wrong:
-            return .clear
-        }
-    }
-}
-
-// MARK: - Button View
-
 struct BeyondTheLineButton: View {
     private let title: String
     private let buttonState: BeyondTheLineButtonState
@@ -72,7 +25,7 @@ struct BeyondTheLineButton: View {
     var body: some View {
         Button(action: action) {
             Text(title)
-                .font(.pretendardSemiBold(size: 20))
+                .font(.subTitle)
                 .padding(10)
                 .frame(width: .infinity, height: 50)
                 .foregroundStyle(buttonState.titleColor)
@@ -91,6 +44,6 @@ struct BeyondTheLineButton: View {
     BeyondTheLineButton(title: "확인", buttonState: .abled, action: {})
     BeyondTheLineButton(title: "확인", buttonState: .disabled, action: {})
     BeyondTheLineButton(title: "확인", buttonState: .white, action: {})
-    BeyondTheLineButton(title: "확인", buttonState: .success, action: {})
-    BeyondTheLineButton(title: "확인", buttonState: .wrong, action: {})
+    BeyondTheLineButton(title: "확인", buttonState: .correct, action: {})
+    BeyondTheLineButton(title: "확인", buttonState: .incorrect, action: {})
 }
