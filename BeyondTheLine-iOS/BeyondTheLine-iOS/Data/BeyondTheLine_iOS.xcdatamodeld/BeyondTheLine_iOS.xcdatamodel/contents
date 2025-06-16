@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23605" systemVersion="24F74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="24233.11" systemVersion="25A5279m" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Background" representedClassName="Background" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="situations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Situation" inverseName="background" inverseEntity="Situation"/>
+    </entity>
+    <entity name="Customer" representedClassName="Customer" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="introMessage" optional="YES" attributeType="String"/>
+        <attribute name="learningCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rules" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="summaryFeedbacks" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <relationship name="lastQuizs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Quiz" inverseName="customer" inverseEntity="Quiz"/>
+        <relationship name="simulatorQuizs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SimulatorQuiz" inverseName="customer" inverseEntity="SimulatorQuiz"/>
+        <relationship name="situation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Situation" inverseName="customers" inverseEntity="Situation"/>
+    </entity>
+    <entity name="Quiz" representedClassName="Quiz" syncable="YES" codeGenerationType="class">
+        <attribute name="answerIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="answers" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="feedbacks" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="question" optional="YES" attributeType="String"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="lastQuizs" inverseEntity="Customer"/>
+        <relationship name="simulatorQuiz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SimulatorQuiz" inverseName="quizs" inverseEntity="SimulatorQuiz"/>
+    </entity>
+    <entity name="SimulatorQuiz" representedClassName="SimulatorQuiz" syncable="YES" codeGenerationType="class">
+        <attribute name="correctAnswer" optional="YES" attributeType="String"/>
+        <attribute name="isWarning" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="preText" optional="YES" attributeType="String"/>
+        <attribute name="wrongAnswer" optional="YES" attributeType="String"/>
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="simulatorQuizs" inverseEntity="Customer"/>
+        <relationship name="quizs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Quiz" inverseName="simulatorQuiz" inverseEntity="Quiz"/>
+    </entity>
+    <entity name="Situation" representedClassName="Situation" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="background" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Background" inverseName="situations" inverseEntity="Background"/>
+        <relationship name="customers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Customer" inverseName="situation" inverseEntity="Customer"/>
     </entity>
 </model>
