@@ -157,8 +157,17 @@ extension PersistenceController {
         lastQuiz2.answers = [
             "너무 복잡한 건 거절하기",
             "요청사항을 정확히 듣고 복창하며 확인하기",
-            "인기 메뉴로 유도해서 간단히 주문하기",
+            "인기 메뉴로 유도해서 간단히 주문하기"
         ] as NSArray
         lastQuiz2.answerIndex = 1
+        
+        // MARK: - Add Array
+        
+        customer1.simulatorQuizs = [simQuiz1, simQuiz2, simQuiz3]
+        customer1.lastQuizs = [lastQuiz1, lastQuiz2]
+        
+        situation1.customers = [customer1]
+        
+        background.situations = [situation1, situation2]
     }
 }
