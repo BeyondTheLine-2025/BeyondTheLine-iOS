@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="24233.11" systemVersion="25A5279m" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Background" representedClassName="Background" syncable="YES" codeGenerationType="class">
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="situations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Situation" inverseName="background" inverseEntity="Situation"/>
     </entity>
     <entity name="Customer" representedClassName="Customer" syncable="YES" codeGenerationType="class">
         <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="introMessage" optional="YES" attributeType="String"/>
         <attribute name="learningCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="rules" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
         <attribute name="summaryFeedbacks" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
         <relationship name="lastQuizs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Quiz" inverseName="customer" inverseEntity="Quiz"/>
@@ -20,12 +20,14 @@
         <attribute name="answerIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="answers" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
         <attribute name="feedbacks" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="question" optional="YES" attributeType="String"/>
         <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="lastQuizs" inverseEntity="Customer"/>
         <relationship name="simulatorQuiz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SimulatorQuiz" inverseName="quizs" inverseEntity="SimulatorQuiz"/>
     </entity>
     <entity name="SimulatorQuiz" representedClassName="SimulatorQuiz" syncable="YES" codeGenerationType="class">
         <attribute name="correctAnswer" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="isWarning" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="preText" optional="YES" attributeType="String"/>
         <attribute name="wrongAnswer" optional="YES" attributeType="String"/>
@@ -33,7 +35,8 @@
         <relationship name="quizs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Quiz" inverseName="simulatorQuiz" inverseEntity="Quiz"/>
     </entity>
     <entity name="Situation" representedClassName="Situation" syncable="YES" codeGenerationType="class">
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="background" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Background" inverseName="situations" inverseEntity="Background"/>
         <relationship name="customers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Customer" inverseName="situation" inverseEntity="Customer"/>
     </entity>
