@@ -32,25 +32,34 @@ struct BeyondTheLineBottomSheet: View {
         VStack {
             Spacer()
             
-            VStack(alignment: .leading, spacing: 16) {
-                HStack {
-                    Spacer()
-                }
-                
-                HStack(spacing: 8) {
-                    Image(systemName: sheetType.iconName)
-                        .foregroundColor(sheetType.iconColor)
-                    Text(sheetType.title)
-                        .font(.title3.bold())
+            VStack(alignment: .leading, spacing: 8) {
+                Group {
+                    HStack { Spacer() }
+                    
+                    HStack(spacing: 4) {
+                        Image(systemName: sheetType.iconName)
+                            .foregroundColor(sheetType.iconColor)
+                        Text(sheetType.title)
+                            .font(.title2)
+                            .foregroundColor(sheetType.textColor)
+                    }
+                    
+                    Text(description)
+                        .font(.body1)
+                        .lineSpacing(4)
                         .foregroundColor(sheetType.textColor)
+                        .padding(.bottom, 12)
                 }
+                .padding(.horizontal, 18)
                 
-                Text(description)
-                    .font(.body)
-                    .foregroundColor(sheetType.textColor)
-                
+                BeyondTheLineButton(
+                    title: buttonTitle,
+                    buttonState: sheetType == .correct ? .correct : .incorrect,
+                    action: { onTapButton() }
+                )
             }
-            .padding(24)
+            .padding(.vertical, 12)
+            .edgesIgnoringSafeArea(.bottom)
             .background(sheetType.backgroundColor)
             .offset(y: offsetY + dragOffset.height)
             .gesture(
@@ -60,26 +69,16 @@ struct BeyondTheLineBottomSheet: View {
                             state = value.translation
                         }
                     }
-                    .onEnded { value in
-                        if value.translation.height > 100 {
-                        }
-                    }
             )
             .animation(.easeInOut, value: dragOffset.height)
         }
-        .background(
-            Color.black.opacity(0.3)
-                .ignoresSafeArea()
-                .onTapGesture {}
-        )
-        .edgesIgnoringSafeArea(.bottom)
     }
 }
 
 #Preview {
-    BeyondTheLineBottomSheet(sheetType: .correct, desctiption: "어쩔", buttonTitle: "확인", onTapButton: {})
+    BeyondTheLineBottomSheet(sheetType: .correct, desctiption: "이런 반응은 고객에게 부담을 줄 수 있어요.\n복잡한 주문일수록 정리해서 복창하는 것이 좋아요.", buttonTitle: "확인", onTapButton: {})
 }
 
 #Preview {
-    BeyondTheLineBottomSheet(sheetType: .incorrect, desctiption: "어쩔", buttonTitle: "확인", onTapButton: {})
+    BeyondTheLineBottomSheet(sheetType: .incorrect, desctiption: "고객의 선택을 제한하는 말투는 지양해야 해요.", buttonTitle: "확인", onTapButton: {})
 }

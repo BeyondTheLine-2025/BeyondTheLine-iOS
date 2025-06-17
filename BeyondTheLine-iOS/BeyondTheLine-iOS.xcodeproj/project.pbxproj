@@ -19,6 +19,9 @@
 		3D28D75B2DF3366400136E48 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28D7532DF3366400136E48 /* Persistence.swift */; };
 		3D28D7682DF338A500136E48 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D7672DF338A500136E48 /* Colors.xcassets */; };
 		3D28D7752DF4053400136E48 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D7742DF4053400136E48 /* .swiftlint.yml */; };
+		3D7CDEBC2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */; };
+		3D7CDEBE2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */; };
+		3D7CDEC02E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDEBF2E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift */; };
 		3D9C89242DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */; };
 		3D9C89282DFC5FB800FCDD61 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */; };
 		3D9C892A2DFC5FE800FCDD61 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */; };
@@ -30,7 +33,6 @@
 		3D9C89D52DFD1B6500FCDD61 /* BeyondTheLineBottomSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C89D42DFD1B6500FCDD61 /* BeyondTheLineBottomSheetModifier.swift */; };
 		3D9C89E42DFD1B8800FCDD61 /* Text+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C89E32DFD1B8800FCDD61 /* Text+.swift */; };
 		3D9C89E72DFD1F0900FCDD61 /* BeyondTheLineNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C89E62DFD1F0900FCDD61 /* BeyondTheLineNavigationBar.swift */; };
-		3D9C89E92DFD1F1700FCDD61 /* BeyondTheLineSpeechBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C89E82DFD1F1700FCDD61 /* BeyondTheLineSpeechBubble.swift */; };
 		3D9C89EB2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C89EA2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift */; };
 		3D9C89ED2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C89EC2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift */; };
 		3D9C8A022DFD205400FCDD61 /* SelectBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A012DFD205400FCDD61 /* SelectBackgroundView.swift */; };
@@ -79,6 +81,9 @@
 		3D28D7552DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeyondTheLine_iOS.xcdatamodel; sourceTree = "<group>"; };
 		3D28D7672DF338A500136E48 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		3D28D7742DF4053400136E48 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSimualtorAlertButton.swift; sourceTree = "<group>"; };
+		3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSimualtorAlertButtonState.swift; sourceTree = "<group>"; };
+		3D7CDEBF2E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineQuizAlertModifier.swift; sourceTree = "<group>"; };
 		3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
@@ -91,7 +96,6 @@
 		3D9C89D42DFD1B6500FCDD61 /* BeyondTheLineBottomSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineBottomSheetModifier.swift; sourceTree = "<group>"; };
 		3D9C89E32DFD1B8800FCDD61 /* Text+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+.swift"; sourceTree = "<group>"; };
 		3D9C89E62DFD1F0900FCDD61 /* BeyondTheLineNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineNavigationBar.swift; sourceTree = "<group>"; };
-		3D9C89E82DFD1F1700FCDD61 /* BeyondTheLineSpeechBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSpeechBubble.swift; sourceTree = "<group>"; };
 		3D9C89EA2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineQuizAlert.swift; sourceTree = "<group>"; };
 		3D9C89EC2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineScriptBubble.swift; sourceTree = "<group>"; };
 		3D9C8A012DFD205400FCDD61 /* SelectBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBackgroundView.swift; sourceTree = "<group>"; };
@@ -247,9 +251,9 @@
 				3D2461212DFBA0A700D9E649 /* BeyondTheLineSelectedButton.swift */,
 				3D2461232DFBA0B900D9E649 /* BeyondTheLineProgressIndicator.swift */,
 				3D9C89E62DFD1F0900FCDD61 /* BeyondTheLineNavigationBar.swift */,
-				3D9C89E82DFD1F1700FCDD61 /* BeyondTheLineSpeechBubble.swift */,
 				3D9C89EC2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift */,
 				3D9C89EA2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift */,
+				3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -258,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9C89D42DFD1B6500FCDD61 /* BeyondTheLineBottomSheetModifier.swift */,
+				3D7CDEBF2E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				3D9C89312DFC6F3700FCDD61 /* BeyondTheLineSelectedButtonState.swift */,
 				3D9C89D22DFD19A800FCDD61 /* BeyondTheLineBottomSheetType.swift */,
 				3DC8D0392DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift */,
+				3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */,
 			);
 			path = Foundations;
 			sourceTree = "<group>";
@@ -635,8 +641,10 @@
 				3D9C8A0A2DFD207D00FCDD61 /* BridgeView.swift in Sources */,
 				3D28D7592DF3366400136E48 /* BeyondTheLine_iOSApp.swift in Sources */,
 				3D2461242DFBA0B900D9E649 /* BeyondTheLineProgressIndicator.swift in Sources */,
+				3D7CDEBC2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift in Sources */,
 				3D9C892E2DFC60CA00FCDD61 /* Font+.swift in Sources */,
 				3D9C89E42DFD1B8800FCDD61 /* Text+.swift in Sources */,
+				3D7CDEBE2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift in Sources */,
 				3D9C8A712DFDA8B300FCDD61 /* AppRoute.swift in Sources */,
 				3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */,
 				3D9C8A572DFD9AD700FCDD61 /* BridgeModel.swift in Sources */,
@@ -654,10 +662,10 @@
 				3DC8D03A2DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift in Sources */,
 				3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */,
 				3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */,
+				3D7CDEC02E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift in Sources */,
 				3D9C8A062DFD206B00FCDD61 /* SelectCustomerView.swift in Sources */,
 				3D9C8A612DFD9B6800FCDD61 /* SummaryScriptViewModel.swift in Sources */,
 				3D9C8A2F2DFD22D900FCDD61 /* SelectCustomerSubView.swift in Sources */,
-				3D9C89E92DFD1F1700FCDD61 /* BeyondTheLineSpeechBubble.swift in Sources */,
 				3D9C8A592DFD9ADE00FCDD61 /* BridgeSubView.swift in Sources */,
 				3D9C8A742DFDA9DB00FCDD61 /* ModuleFactory.swift in Sources */,
 				3D9C8A5F2DFD9B5F00FCDD61 /* SummaryScriptModel.swift in Sources */,
