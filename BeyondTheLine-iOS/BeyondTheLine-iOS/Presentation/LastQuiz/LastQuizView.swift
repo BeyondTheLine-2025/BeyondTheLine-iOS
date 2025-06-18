@@ -9,13 +9,36 @@ import SwiftUI
 
 struct LastQuizView: View {
     @EnvironmentObject var coordinator: AppCoordinator
+    @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject var viewModel: LastQuizViewModel
-
+    @State private var currentQuizIndex = 0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        LastQuizProgressView(viewModel: viewModel)
+            .onAppear {
+                viewModel.fetchCustomer(context: viewContext, name: "손님 이름1")
+            } // 앞 단계 완성 후 id로 fetch 하도록 변경 예정
 
-#Preview {
-    LastQuizView(viewModel: LastQuizViewModel())
+        if currentQuizIndex < viewModel.quizItems.count {
+            let quizItem = viewModel.quizItems[currentQuizIndex]
+            
+            VStack(alignment: .leading, spacing: 60) {
+                LastQuizQuestionView(
+                    quizItem: quizItem,
+                    quizIndex: currentQuizIndex
+                )
+                
+                LastQuizSelectionContainer(
+                    quizItem: quizItem,
+                    totalQuiz: viewModel.quizItems.count,
+                    quizIndex: $currentQuizIndex,
+                    selectedIndex: viewModel.selectedAnswerIndex(for: quizItem.id),
+                    onSelectAnswer: { index in
+                        viewModel.selectAnswer(for: quizItem.id, answerIndex: index)
+                    }
+                )
+            }
+            .padding(.horizontal, 18)
+        }
+    }
 }
