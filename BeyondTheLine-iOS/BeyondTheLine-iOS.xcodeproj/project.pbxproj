@@ -15,13 +15,17 @@
 		3D28D7572DF3366400136E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D74E2DF3366400136E48 /* Assets.xcassets */; };
 		3D28D7582DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D28D7502DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodeld */; };
 		3D28D7592DF3366400136E48 /* BeyondTheLine_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28D7512DF3366400136E48 /* BeyondTheLine_iOSApp.swift */; };
-		3D28D75A2DF3366400136E48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28D7522DF3366400136E48 /* ContentView.swift */; };
 		3D28D75B2DF3366400136E48 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28D7532DF3366400136E48 /* Persistence.swift */; };
 		3D28D7682DF338A500136E48 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D7672DF338A500136E48 /* Colors.xcassets */; };
 		3D28D7752DF4053400136E48 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D7742DF4053400136E48 /* .swiftlint.yml */; };
 		3D7CDEBC2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */; };
 		3D7CDEBE2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */; };
 		3D7CDEC02E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDEBF2E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift */; };
+		3D7CDF8C2E04344900B1E801 /* customer1_take1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF882E04344900B1E801 /* customer1_take1.wav */; };
+		3D7CDF8D2E04344900B1E801 /* customer1_take2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF892E04344900B1E801 /* customer1_take2.wav */; };
+		3D7CDF8E2E04344900B1E801 /* customer1_take3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF8A2E04344900B1E801 /* customer1_take3.wav */; };
+		3D7CDF8F2E04344900B1E801 /* customer1_take4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF8B2E04344900B1E801 /* customer1_take4.wav */; };
+		3D7CDF912E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDF902E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift */; };
 		3D9C89242DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */; };
 		3D9C89282DFC5FB800FCDD61 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */; };
 		3D9C892A2DFC5FE800FCDD61 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */; };
@@ -76,7 +80,6 @@
 		3D28D74E2DF3366400136E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D28D74F2DF3366400136E48 /* BeyondTheLine_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeyondTheLine_iOS.entitlements; sourceTree = "<group>"; };
 		3D28D7512DF3366400136E48 /* BeyondTheLine_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLine_iOSApp.swift; sourceTree = "<group>"; };
-		3D28D7522DF3366400136E48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D28D7532DF3366400136E48 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3D28D7552DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeyondTheLine_iOS.xcdatamodel; sourceTree = "<group>"; };
 		3D28D7672DF338A500136E48 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -84,6 +87,11 @@
 		3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSimualtorAlertButton.swift; sourceTree = "<group>"; };
 		3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSimualtorAlertButtonState.swift; sourceTree = "<group>"; };
 		3D7CDEBF2E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineQuizAlertModifier.swift; sourceTree = "<group>"; };
+		3D7CDF882E04344900B1E801 /* customer1_take1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = customer1_take1.wav; sourceTree = "<group>"; };
+		3D7CDF892E04344900B1E801 /* customer1_take2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = customer1_take2.wav; sourceTree = "<group>"; };
+		3D7CDF8A2E04344900B1E801 /* customer1_take3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = customer1_take3.wav; sourceTree = "<group>"; };
+		3D7CDF8B2E04344900B1E801 /* customer1_take4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = customer1_take4.wav; sourceTree = "<group>"; };
+		3D7CDF902E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSimulatorDialog.swift; sourceTree = "<group>"; };
 		3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
@@ -192,7 +200,6 @@
 		3D28D75D2DF337F900136E48 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				3D28D7522DF3366400136E48 /* ContentView.swift */,
 				3D9C89FB2DFD1FB200FCDD61 /* SelectBackground */,
 				3D9C89FC2DFD1FC600FCDD61 /* SelectCustomer */,
 				3D9C89FD2DFD1FD800FCDD61 /* Simulator */,
@@ -228,9 +235,10 @@
 		3D28D7662DF3389600136E48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3D9C89222DFC5F9D00FCDD61 /* Fonts */,
+				3D7CDF872E04342F00B1E801 /* Sounds */,
 				3D28D74E2DF3366400136E48 /* Assets.xcassets */,
 				3D28D7672DF338A500136E48 /* Colors.xcassets */,
-				3D9C89222DFC5F9D00FCDD61 /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 				3D9C89EC2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift */,
 				3D9C89EA2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift */,
 				3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */,
+				3D7CDF902E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -265,6 +274,17 @@
 				3D7CDEBF2E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		3D7CDF872E04342F00B1E801 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3D7CDF882E04344900B1E801 /* customer1_take1.wav */,
+				3D7CDF892E04344900B1E801 /* customer1_take2.wav */,
+				3D7CDF8A2E04344900B1E801 /* customer1_take3.wav */,
+				3D7CDF8B2E04344900B1E801 /* customer1_take4.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		3D9C89222DFC5F9D00FCDD61 /* Fonts */ = {
@@ -590,6 +610,10 @@
 			files = (
 				3D28D7752DF4053400136E48 /* .swiftlint.yml in Resources */,
 				3D9C892A2DFC5FE800FCDD61 /* Pretendard-Bold.otf in Resources */,
+				3D7CDF8C2E04344900B1E801 /* customer1_take1.wav in Resources */,
+				3D7CDF8D2E04344900B1E801 /* customer1_take2.wav in Resources */,
+				3D7CDF8E2E04344900B1E801 /* customer1_take3.wav in Resources */,
+				3D7CDF8F2E04344900B1E801 /* customer1_take4.wav in Resources */,
 				3D28D7682DF338A500136E48 /* Colors.xcassets in Resources */,
 				3D9C89282DFC5FB800FCDD61 /* Pretendard-Regular.otf in Resources */,
 				3D9C89242DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf in Resources */,
@@ -648,7 +672,6 @@
 				3D9C8A712DFDA8B300FCDD61 /* AppRoute.swift in Sources */,
 				3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */,
 				3D9C8A572DFD9AD700FCDD61 /* BridgeModel.swift in Sources */,
-				3D28D75A2DF3366400136E48 /* ContentView.swift in Sources */,
 				3D9C8A272DFD229300FCDD61 /* SelectBackgroundViewModel.swift in Sources */,
 				3D9C89302DFC666000FCDD61 /* BeyondTheLineButtonState.swift in Sources */,
 				3D9C8A022DFD205400FCDD61 /* SelectBackgroundView.swift in Sources */,
@@ -663,6 +686,7 @@
 				3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */,
 				3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */,
 				3D7CDEC02E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift in Sources */,
+				3D7CDF912E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift in Sources */,
 				3D9C8A062DFD206B00FCDD61 /* SelectCustomerView.swift in Sources */,
 				3D9C8A612DFD9B6800FCDD61 /* SummaryScriptViewModel.swift in Sources */,
 				3D9C8A2F2DFD22D900FCDD61 /* SelectCustomerSubView.swift in Sources */,
