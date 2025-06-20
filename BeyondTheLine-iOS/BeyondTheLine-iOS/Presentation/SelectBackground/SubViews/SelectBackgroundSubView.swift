@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct SelectBackgroundSubView: View {
+    let backgrounds: [BackgroundModel]
+    let onSelect: (SituationModel) -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(spacing: 20) {
+                ForEach(backgrounds) { background in
+                    ForEach(background.sortedSituations) { situation in
+                        BackgroundCellView(situation: situation) {
+                            onSelect(situation)
+                        }
+                    }
+                }
+            }
+        }
     }
-}
-
-#Preview {
-    SelectBackgroundSubView()
 }
