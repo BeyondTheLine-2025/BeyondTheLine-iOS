@@ -8,14 +8,31 @@
 import SwiftUI
 
 struct SelectCustomerView: View {
+    @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var coordinator: AppCoordinator
     @ObservedObject var viewModel: SelectCustomerViewModel
-
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        VStack(spacing: 0) {
+            BeyondTheLineNavigationBar(
+                leadingType: .back(action: {
+                    coordinator.pop()
+                }),
+                centerType: .title(title: "상황 선택")
+            )
 
-#Preview {
-    SelectCustomerView(viewModel: SelectCustomerViewModel())
+            SituationBannerView(situation: viewModel.situation)
+
+            if let model = viewModel.selectedSituationModel {
+                SelectCustomerSubView(customers: model.customers) { customer in
+                    viewModel.selectCustomer(customer, coordinator: coordinator)
+                }
+            }
+        }
+        .onAppear {
+            viewModel.fetchSituations(context: viewContext)
+        }
+        .background(.btlGray90)
+        .toolbar(.hidden, for: .navigationBar)
+    }
 }
