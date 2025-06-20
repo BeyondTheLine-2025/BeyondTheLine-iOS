@@ -41,7 +41,7 @@
 		3D9C8A0A2DFD207D00FCDD61 /* BridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A092DFD207D00FCDD61 /* BridgeView.swift */; };
 		3D9C8A0C2DFD208400FCDD61 /* LastQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A0B2DFD208400FCDD61 /* LastQuizView.swift */; };
 		3D9C8A112DFD20F100FCDD61 /* SummaryScriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A102DFD20F100FCDD61 /* SummaryScriptView.swift */; };
-		3D9C8A162DFD214300FCDD61 /* SelectBackgroundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A152DFD214300FCDD61 /* SelectBackgroundModel.swift */; };
+		3D9C8A162DFD214300FCDD61 /* BackgroundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A152DFD214300FCDD61 /* BackgroundModel.swift */; };
 		3D9C8A272DFD229300FCDD61 /* SelectBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A262DFD229300FCDD61 /* SelectBackgroundViewModel.swift */; };
 		3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A282DFD22A400FCDD61 /* SelectBackgroundSubView.swift */; };
 		3D9C8A2F2DFD22D900FCDD61 /* SelectCustomerSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A2E2DFD22D900FCDD61 /* SelectCustomerSubView.swift */; };
@@ -49,7 +49,7 @@
 		3D9C8A412DFD233C00FCDD61 /* LastQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A402DFD233C00FCDD61 /* LastQuizViewModel.swift */; };
 		3D9C8A432DFD234500FCDD61 /* LastQuizSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A422DFD234500FCDD61 /* LastQuizSubView.swift */; };
 		3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A482DFD236300FCDD61 /* SummaryScriptSubView.swift */; };
-		3D9C8A4B2DFD23B600FCDD61 /* SelectCustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A4A2DFD23B600FCDD61 /* SelectCustomerModel.swift */; };
+		3D9C8A4B2DFD23B600FCDD61 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A4A2DFD23B600FCDD61 /* CustomerModel.swift */; };
 		3D9C8A512DFD23FF00FCDD61 /* SimulatorSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A502DFD23FF00FCDD61 /* SimulatorSubView.swift */; };
 		3D9C8A532DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A522DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift */; };
 		3D9C8A552DFD9AC000FCDD61 /* SimulatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A542DFD9AC000FCDD61 /* SimulatorViewModel.swift */; };
@@ -64,6 +64,14 @@
 		3D9C8A762DFDACC200FCDD61 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A752DFDACC200FCDD61 /* AppCoordinator.swift */; };
 		3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A772DFDACF000FCDD61 /* RootNavigationView.swift */; };
 		3DC8D03A2DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8D0392DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift */; };
+		998FD3932E041AC800773EB5 /* BackgroundCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3922E041AAE00773EB5 /* BackgroundCellView.swift */; };
+		998FD3952E041BA100773EB5 /* BackgroundHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3942E041B9A00773EB5 /* BackgroundHeaderView.swift */; };
+		998FD3972E04243500773EB5 /* SituationBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3962E04242300773EB5 /* SituationBannerView.swift */; };
+		998FD3992E04250500773EB5 /* CustomerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3982E0424EF00773EB5 /* CustomerCellView.swift */; };
+		998FD39B2E0425FC00773EB5 /* CustomerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39A2E0425F000773EB5 /* CustomerInfoView.swift */; };
+		998FD39D2E042A9E00773EB5 /* CustomerCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */; };
+		998FD39F2E042B1C00773EB5 /* LearningInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39E2E042B0000773EB5 /* LearningInfoView.swift */; };
+		998FD3A12E05295400773EB5 /* SituationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3A02E05293B00773EB5 /* SituationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,7 +112,7 @@
 		3D9C8A092DFD207D00FCDD61 /* BridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeView.swift; sourceTree = "<group>"; };
 		3D9C8A0B2DFD208400FCDD61 /* LastQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizView.swift; sourceTree = "<group>"; };
 		3D9C8A102DFD20F100FCDD61 /* SummaryScriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptView.swift; sourceTree = "<group>"; };
-		3D9C8A152DFD214300FCDD61 /* SelectBackgroundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBackgroundModel.swift; sourceTree = "<group>"; };
+		3D9C8A152DFD214300FCDD61 /* BackgroundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundModel.swift; sourceTree = "<group>"; };
 		3D9C8A262DFD229300FCDD61 /* SelectBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBackgroundViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A282DFD22A400FCDD61 /* SelectBackgroundSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBackgroundSubView.swift; sourceTree = "<group>"; };
 		3D9C8A2E2DFD22D900FCDD61 /* SelectCustomerSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCustomerSubView.swift; sourceTree = "<group>"; };
@@ -112,7 +120,7 @@
 		3D9C8A402DFD233C00FCDD61 /* LastQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A422DFD234500FCDD61 /* LastQuizSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizSubView.swift; sourceTree = "<group>"; };
 		3D9C8A482DFD236300FCDD61 /* SummaryScriptSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptSubView.swift; sourceTree = "<group>"; };
-		3D9C8A4A2DFD23B600FCDD61 /* SelectCustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCustomerModel.swift; sourceTree = "<group>"; };
+		3D9C8A4A2DFD23B600FCDD61 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
 		3D9C8A502DFD23FF00FCDD61 /* SimulatorSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSubView.swift; sourceTree = "<group>"; };
 		3D9C8A522DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCustomerViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A542DFD9AC000FCDD61 /* SimulatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewModel.swift; sourceTree = "<group>"; };
@@ -127,6 +135,14 @@
 		3D9C8A752DFDACC200FCDD61 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3D9C8A772DFDACF000FCDD61 /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
 		3DC8D0392DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineNavigationBarType.swift; sourceTree = "<group>"; };
+		998FD3922E041AAE00773EB5 /* BackgroundCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCellView.swift; sourceTree = "<group>"; };
+		998FD3942E041B9A00773EB5 /* BackgroundHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundHeaderView.swift; sourceTree = "<group>"; };
+		998FD3962E04242300773EB5 /* SituationBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationBannerView.swift; sourceTree = "<group>"; };
+		998FD3982E0424EF00773EB5 /* CustomerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCellView.swift; sourceTree = "<group>"; };
+		998FD39A2E0425F000773EB5 /* CustomerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoView.swift; sourceTree = "<group>"; };
+		998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCellContentView.swift; sourceTree = "<group>"; };
+		998FD39E2E042B0000773EB5 /* LearningInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningInfoView.swift; sourceTree = "<group>"; };
+		998FD3A02E05293B00773EB5 /* SituationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +391,8 @@
 		3D9C8A132DFD211100FCDD61 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				998FD3942E041B9A00773EB5 /* BackgroundHeaderView.swift */,
+				998FD3922E041AAE00773EB5 /* BackgroundCellView.swift */,
 				3D9C8A282DFD22A400FCDD61 /* SelectBackgroundSubView.swift */,
 			);
 			path = SubViews;
@@ -383,7 +401,7 @@
 		3D9C8A142DFD211700FCDD61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C8A152DFD214300FCDD61 /* SelectBackgroundModel.swift */,
+				3D9C8A152DFD214300FCDD61 /* BackgroundModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -399,6 +417,11 @@
 		3D9C8A182DFD217000FCDD61 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				998FD3982E0424EF00773EB5 /* CustomerCellView.swift */,
+				998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */,
+				998FD39A2E0425F000773EB5 /* CustomerInfoView.swift */,
+				998FD39E2E042B0000773EB5 /* LearningInfoView.swift */,
+				998FD3962E04242300773EB5 /* SituationBannerView.swift */,
 				3D9C8A2E2DFD22D900FCDD61 /* SelectCustomerSubView.swift */,
 			);
 			path = SubViews;
@@ -407,7 +430,8 @@
 		3D9C8A192DFD217400FCDD61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C8A4A2DFD23B600FCDD61 /* SelectCustomerModel.swift */,
+				998FD3A02E05293B00773EB5 /* SituationModel.swift */,
+				3D9C8A4A2DFD23B600FCDD61 /* CustomerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -627,16 +651,19 @@
 			files = (
 				3D9C8A332DFD22F000FCDD61 /* SimulatorModel.swift in Sources */,
 				3D9C89D52DFD1B6500FCDD61 /* BeyondTheLineBottomSheetModifier.swift in Sources */,
-				3D9C8A162DFD214300FCDD61 /* SelectBackgroundModel.swift in Sources */,
+				3D9C8A162DFD214300FCDD61 /* BackgroundModel.swift in Sources */,
 				3D9C8A5D2DFD9B5000FCDD61 /* LastQuizModel.swift in Sources */,
+				998FD3992E04250500773EB5 /* CustomerCellView.swift in Sources */,
 				3D2461222DFBA0A700D9E649 /* BeyondTheLineSelectedButton.swift in Sources */,
 				3D9C89D12DFD194900FCDD61 /* SymbolLiterals.swift in Sources */,
+				998FD3932E041AC800773EB5 /* BackgroundCellView.swift in Sources */,
 				3D9C8A762DFDACC200FCDD61 /* AppCoordinator.swift in Sources */,
 				3D28D7582DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodeld in Sources */,
 				3D9C89E72DFD1F0900FCDD61 /* BeyondTheLineNavigationBar.swift in Sources */,
 				3D9C8A0C2DFD208400FCDD61 /* LastQuizView.swift in Sources */,
+				998FD3A12E05295400773EB5 /* SituationModel.swift in Sources */,
 				3D9C89D32DFD19A800FCDD61 /* BeyondTheLineBottomSheetType.swift in Sources */,
-				3D9C8A4B2DFD23B600FCDD61 /* SelectCustomerModel.swift in Sources */,
+				3D9C8A4B2DFD23B600FCDD61 /* CustomerModel.swift in Sources */,
 				3D9C8A552DFD9AC000FCDD61 /* SimulatorViewModel.swift in Sources */,
 				3D9C8A0A2DFD207D00FCDD61 /* BridgeView.swift in Sources */,
 				3D28D7592DF3366400136E48 /* BeyondTheLine_iOSApp.swift in Sources */,
@@ -644,6 +671,7 @@
 				3D7CDEBC2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift in Sources */,
 				3D9C892E2DFC60CA00FCDD61 /* Font+.swift in Sources */,
 				3D9C89E42DFD1B8800FCDD61 /* Text+.swift in Sources */,
+				998FD39B2E0425FC00773EB5 /* CustomerInfoView.swift in Sources */,
 				3D7CDEBE2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift in Sources */,
 				3D9C8A712DFDA8B300FCDD61 /* AppRoute.swift in Sources */,
 				3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */,
@@ -662,19 +690,23 @@
 				3DC8D03A2DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift in Sources */,
 				3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */,
 				3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */,
+				998FD39F2E042B1C00773EB5 /* LearningInfoView.swift in Sources */,
 				3D7CDEC02E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift in Sources */,
 				3D9C8A062DFD206B00FCDD61 /* SelectCustomerView.swift in Sources */,
 				3D9C8A612DFD9B6800FCDD61 /* SummaryScriptViewModel.swift in Sources */,
 				3D9C8A2F2DFD22D900FCDD61 /* SelectCustomerSubView.swift in Sources */,
 				3D9C8A592DFD9ADE00FCDD61 /* BridgeSubView.swift in Sources */,
 				3D9C8A742DFDA9DB00FCDD61 /* ModuleFactory.swift in Sources */,
+				998FD39D2E042A9E00773EB5 /* CustomerCellContentView.swift in Sources */,
 				3D9C8A5F2DFD9B5F00FCDD61 /* SummaryScriptModel.swift in Sources */,
 				3D9C8A512DFD23FF00FCDD61 /* SimulatorSubView.swift in Sources */,
 				3D2461202DFBA08700D9E649 /* BeyondTheLineBottomSheet.swift in Sources */,
 				3D9C8A112DFD20F100FCDD61 /* SummaryScriptView.swift in Sources */,
 				3D9C8A532DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift in Sources */,
 				3D9C8A412DFD233C00FCDD61 /* LastQuizViewModel.swift in Sources */,
+				998FD3972E04243500773EB5 /* SituationBannerView.swift in Sources */,
 				3D9C89322DFC6F3700FCDD61 /* BeyondTheLineSelectedButtonState.swift in Sources */,
+				998FD3952E041BA100773EB5 /* BackgroundHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,7 +836,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeyondTheLine-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = JF6B89ULG6;
+				DEVELOPMENT_TEAM = F83F8K6223;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -846,7 +878,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeyondTheLine-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = JF6B89ULG6;
+				DEVELOPMENT_TEAM = F83F8K6223;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
