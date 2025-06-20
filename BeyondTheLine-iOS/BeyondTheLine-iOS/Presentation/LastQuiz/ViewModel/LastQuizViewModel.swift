@@ -12,10 +12,19 @@ import SwiftUI
 final class LastQuizViewModel: ObservableObject {
     @Published var quizItems: [QuizItem] = []
     @Published var selectedAnswers: [UUID: Int] = [:]
+    @Published var incorrectAnswers: [UUID: Set<Int>] = [:]
+    @Published var currentSelectedIndex: Int?
+    @Published var currentSheetType: BeyondTheLineBottomSheetType?
     
     var progress: Double {
         guard !quizItems.isEmpty else { return 0.0 }
-        return Double(selectedAnswers.count) / Double(quizItems.count)
+
+        let correctCount = selectedAnswers.filter { entry in
+            let (id, index) = entry
+            return quizItems.first(where: { $0.id == id })?.correctAnswerIndex == index
+        }.count
+
+        return Double(correctCount) / Double(quizItems.count)
     }
     
     func fetchCustomer(context: NSManagedObjectContext, name: String) {
@@ -30,7 +39,7 @@ final class LastQuizViewModel: ObservableObject {
                     guard let id = quiz.id,
                           let question = quiz.question,
                           let answers = quiz.answers as? [String] else { return nil }
-                    return QuizItem(id: id, question: question, answers: answers)
+                    return QuizItem(id: id, question: question, answers: answers, correctAnswerIndex: Int(quiz.answerIndex))
                 }
             }
         } catch {
@@ -38,12 +47,28 @@ final class LastQuizViewModel: ObservableObject {
         }
     }
     
-    func selectAnswer(for id: UUID, answerIndex: Int) {
+    func selectAnswer(for id: UUID, answerIndex: Int) -> Bool {
+        guard let quiz = quizItems.first(where: { $0.id == id }) else { return false }
+        
         selectedAnswers[id] = answerIndex
-        print("SELECTED ANSWER INDEX: \(answerIndex)")
+        
+        if answerIndex == quiz.correctAnswerIndex {
+            return true
+        } else {
+            incorrectAnswers[id, default: []].insert(answerIndex)
+            return false
+        }
     }
     
-    func selectedAnswerIndex(for id: UUID) -> Int? {
-        selectedAnswers[id]
+    func isAnswerDisabled(for id: UUID, index: Int) -> Bool {
+        incorrectAnswers[id]?.contains(index) ?? false
     }
+    
+    func resetIncorrectSelection(for id: UUID) {
+        if let selected = selectedAnswers[id] {
+            incorrectAnswers[id, default: []].insert(selected)
+        }
+        selectedAnswers[id] = nil
+    }
+    
 }

@@ -10,22 +10,39 @@ import SwiftUI
 struct LastQuizSelectionView: View {
     let quizItem: QuizItem
     let selectedIndex: Int?
+    let incorrectIndices: Set<Int>?
     var onSelectAnswer: (Int) -> Void
     
     var body: some View {
         VStack(alignment: .leading) {
             ForEach(quizItem.answers.indices, id: \.self) { index in
+                let isIncorrect = incorrectIndices?.contains(index) ?? false
+                let isSelected = selectedIndex == index
+                
+                let buttonState: BeyondTheLineSelectedButtonState = {
+                    if isSelected && isIncorrect {
+                        return .incorrect
+                    } else if isSelected {
+                        return .correct
+                    } else if isIncorrect {
+                        return .disabled
+                    } else {
+                        return .basic
+                    }
+                }()
+                
                 BeyondTheLineSelectedButton(
                     title: quizItem.answers[index],
-                    buttonState: selectedIndex == index ? .pressed : .basic,
+                    buttonState: buttonState,
                     action: {
-                        onSelectAnswer(index)
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                        withAnimation(.easeInOut(duration: 0.25)) {
+                            onSelectAnswer(index)
                         }
                     }
                 )
             }
             Spacer()
         }
+        .padding(.horizontal, 18)
     }
 }

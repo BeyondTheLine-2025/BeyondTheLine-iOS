@@ -19,9 +19,11 @@ struct LastQuizQuestionView: View {
             
             Text(quizItem.question)
                 .font(.title1)
+                .multilineTextAlignment(.leading)
+                .foregroundStyle(.btlBlack)
                 .lineLimit(nil)
                 .fixedSize(horizontal: false, vertical: true)
-                .multilineTextAlignment(.leading)
         }
+        .padding(.horizontal, 18)
     }
 }

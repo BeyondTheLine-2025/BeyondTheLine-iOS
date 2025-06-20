@@ -18,7 +18,7 @@ struct LastQuizView: View {
             .onAppear {
                 viewModel.fetchCustomer(context: viewContext, name: "손님 이름1")
             } // 앞 단계 완성 후 id로 fetch 하도록 변경 예정
-
+        
         if currentQuizIndex < viewModel.quizItems.count {
             let quizItem = viewModel.quizItems[currentQuizIndex]
             
@@ -32,13 +32,9 @@ struct LastQuizView: View {
                     quizItem: quizItem,
                     totalQuiz: viewModel.quizItems.count,
                     quizIndex: $currentQuizIndex,
-                    selectedIndex: viewModel.selectedAnswerIndex(for: quizItem.id),
-                    onSelectAnswer: { index in
-                        viewModel.selectAnswer(for: quizItem.id, answerIndex: index)
-                    }
+                    viewModel: viewModel
                 )
             }
-            .padding(.horizontal, 18)
         }
     }
 }
