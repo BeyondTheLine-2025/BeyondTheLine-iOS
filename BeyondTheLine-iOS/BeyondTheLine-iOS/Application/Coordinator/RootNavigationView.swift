@@ -21,7 +21,8 @@ struct RootNavigationView: View {
                 .navigationDestination(for: AppRoute.self) { route in
                     switch route {
                     case .selectBackground: moduleFactory.makeSelectBackgroundView()
-                    case .selectCustomer: moduleFactory.makeSelectCustomerView()
+                    case .selectCustomer(let situationID):
+                        moduleFactory.makeSelectCustomerView(situationID: situationID)
                     case .simulator: moduleFactory.makeSimulatorView()
                     case .bridge: moduleFactory.makeBridgeView()
                     case .lastQuiz: moduleFactory.makeLastQuizView()

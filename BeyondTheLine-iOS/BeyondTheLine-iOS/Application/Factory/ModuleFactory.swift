@@ -9,7 +9,7 @@ import SwiftUI
 
 protocol ModuleFactoryProtocol {
     func makeSelectBackgroundView() -> SelectBackgroundView
-    func makeSelectCustomerView() -> SelectCustomerView
+    func makeSelectCustomerView(situationID: UUID) -> SelectCustomerView
     func makeSimulatorView() -> SimulatorView
     func makeBridgeView() -> BridgeView
     func makeLastQuizView() -> LastQuizView
@@ -26,8 +26,8 @@ final class ModuleFactory: ModuleFactoryProtocol {
         return view
     }
     
-    func makeSelectCustomerView() -> SelectCustomerView {
-        let viewModel = SelectCustomerViewModel()
+    func makeSelectCustomerView(situationID: UUID) -> SelectCustomerView {
+        let viewModel = SelectCustomerViewModel(situationID: situationID)
         let view = SelectCustomerView(viewModel: viewModel)
         return view
     }
