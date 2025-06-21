@@ -46,7 +46,6 @@
 		3D9C8A2F2DFD22D900FCDD61 /* SelectCustomerSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A2E2DFD22D900FCDD61 /* SelectCustomerSubView.swift */; };
 		3D9C8A332DFD22F000FCDD61 /* SimulatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A322DFD22F000FCDD61 /* SimulatorModel.swift */; };
 		3D9C8A412DFD233C00FCDD61 /* LastQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A402DFD233C00FCDD61 /* LastQuizViewModel.swift */; };
-		3D9C8A432DFD234500FCDD61 /* LastQuizSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A422DFD234500FCDD61 /* LastQuizSubView.swift */; };
 		3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A482DFD236300FCDD61 /* SummaryScriptSubView.swift */; };
 		3D9C8A4B2DFD23B600FCDD61 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A4A2DFD23B600FCDD61 /* CustomerModel.swift */; };
 		3D9C8A512DFD23FF00FCDD61 /* SimulatorSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A502DFD23FF00FCDD61 /* SimulatorSubView.swift */; };
@@ -71,6 +70,10 @@
 		998FD39D2E042A9E00773EB5 /* CustomerCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */; };
 		998FD39F2E042B1C00773EB5 /* LearningInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39E2E042B0000773EB5 /* LearningInfoView.swift */; };
 		998FD3A12E05295400773EB5 /* SituationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3A02E05293B00773EB5 /* SituationModel.swift */; };
+		CA6160A22E0146A200C16CF5 /* LastQuizQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6160A12E0146A200C16CF5 /* LastQuizQuestionView.swift */; };
+		CA6160A42E014AA000C16CF5 /* LastQuizSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6160A32E014AA000C16CF5 /* LastQuizSelectionView.swift */; };
+		CA6160A62E01508E00C16CF5 /* LastQuizProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6160A52E01508E00C16CF5 /* LastQuizProgressView.swift */; };
+		CA6160A82E015EAC00C16CF5 /* LastQuizSelectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6160A72E015EAC00C16CF5 /* LastQuizSelectionContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,7 +119,6 @@
 		3D9C8A2E2DFD22D900FCDD61 /* SelectCustomerSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCustomerSubView.swift; sourceTree = "<group>"; };
 		3D9C8A322DFD22F000FCDD61 /* SimulatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorModel.swift; sourceTree = "<group>"; };
 		3D9C8A402DFD233C00FCDD61 /* LastQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizViewModel.swift; sourceTree = "<group>"; };
-		3D9C8A422DFD234500FCDD61 /* LastQuizSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizSubView.swift; sourceTree = "<group>"; };
 		3D9C8A482DFD236300FCDD61 /* SummaryScriptSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptSubView.swift; sourceTree = "<group>"; };
 		3D9C8A4A2DFD23B600FCDD61 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
 		3D9C8A502DFD23FF00FCDD61 /* SimulatorSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSubView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,10 @@
 		998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCellContentView.swift; sourceTree = "<group>"; };
 		998FD39E2E042B0000773EB5 /* LearningInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningInfoView.swift; sourceTree = "<group>"; };
 		998FD3A02E05293B00773EB5 /* SituationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationModel.swift; sourceTree = "<group>"; };
+		CA6160A12E0146A200C16CF5 /* LastQuizQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizQuestionView.swift; sourceTree = "<group>"; };
+		CA6160A32E014AA000C16CF5 /* LastQuizSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizSelectionView.swift; sourceTree = "<group>"; };
+		CA6160A52E01508E00C16CF5 /* LastQuizProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizProgressView.swift; sourceTree = "<group>"; };
+		CA6160A72E015EAC00C16CF5 /* LastQuizSelectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizSelectionContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,7 +498,10 @@
 		3D9C8A212DFD21D500FCDD61 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C8A422DFD234500FCDD61 /* LastQuizSubView.swift */,
+				CA6160A12E0146A200C16CF5 /* LastQuizQuestionView.swift */,
+				CA6160A32E014AA000C16CF5 /* LastQuizSelectionView.swift */,
+				CA6160A52E01508E00C16CF5 /* LastQuizProgressView.swift */,
+				CA6160A72E015EAC00C16CF5 /* LastQuizSelectionContainer.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -656,12 +665,14 @@
 				998FD3932E041AC800773EB5 /* BackgroundCellView.swift in Sources */,
 				3D9C8A762DFDACC200FCDD61 /* AppCoordinator.swift in Sources */,
 				3D28D7582DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodeld in Sources */,
+				CA6160A62E01508E00C16CF5 /* LastQuizProgressView.swift in Sources */,
 				3D9C89E72DFD1F0900FCDD61 /* BeyondTheLineNavigationBar.swift in Sources */,
 				3D9C8A0C2DFD208400FCDD61 /* LastQuizView.swift in Sources */,
 				998FD3A12E05295400773EB5 /* SituationModel.swift in Sources */,
 				3D9C89D32DFD19A800FCDD61 /* BeyondTheLineBottomSheetType.swift in Sources */,
 				3D9C8A4B2DFD23B600FCDD61 /* CustomerModel.swift in Sources */,
 				3D9C8A552DFD9AC000FCDD61 /* SimulatorViewModel.swift in Sources */,
+				CA6160A82E015EAC00C16CF5 /* LastQuizSelectionContainer.swift in Sources */,
 				3D9C8A0A2DFD207D00FCDD61 /* BridgeView.swift in Sources */,
 				3D28D7592DF3366400136E48 /* BeyondTheLine_iOSApp.swift in Sources */,
 				3D2461242DFBA0B900D9E649 /* BeyondTheLineProgressIndicator.swift in Sources */,
@@ -674,12 +685,13 @@
 				3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */,
 				3D9C8A572DFD9AD700FCDD61 /* BridgeModel.swift in Sources */,
 				3D9C8A272DFD229300FCDD61 /* SelectBackgroundViewModel.swift in Sources */,
+				CA6160A42E014AA000C16CF5 /* LastQuizSelectionView.swift in Sources */,
 				3D9C89302DFC666000FCDD61 /* BeyondTheLineButtonState.swift in Sources */,
 				3D9C8A022DFD205400FCDD61 /* SelectBackgroundView.swift in Sources */,
 				3D9C8A5B2DFD9AE500FCDD61 /* BridgeViewModel.swift in Sources */,
 				3D24611E2DFB9FAA00D9E649 /* BeyondTheLineButton.swift in Sources */,
+				CA6160A22E0146A200C16CF5 /* LastQuizQuestionView.swift in Sources */,
 				3D9C89ED2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift in Sources */,
-				3D9C8A432DFD234500FCDD61 /* LastQuizSubView.swift in Sources */,
 				3D28D75B2DF3366400136E48 /* Persistence.swift in Sources */,
 				3D9C89EB2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift in Sources */,
 				3D9C8A082DFD207300FCDD61 /* SimulatorView.swift in Sources */,
@@ -832,7 +844,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeyondTheLine-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = F83F8K6223;
+				DEVELOPMENT_TEAM = 6TW9MCXPJD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -874,7 +886,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeyondTheLine-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = F83F8K6223;
+				DEVELOPMENT_TEAM = 6TW9MCXPJD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;

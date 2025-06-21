@@ -17,8 +17,7 @@ struct BeyondTheLineProgressIndicator: View {
                     .fill(.ultraThinMaterial)
                     .fill(Color.btlBlue85)
                     .frame(height: 12)
-                    .shadow(color: .black.opacity(0.08), radius: 12, x: 0, y: 2)
-
+                
                 RoundedRectangle(cornerRadius: 6)
                     .fill(Color.btlBlue)
                     .frame(width: max(0, min(progress, 1)) * geometry.size.width, height: 12)
