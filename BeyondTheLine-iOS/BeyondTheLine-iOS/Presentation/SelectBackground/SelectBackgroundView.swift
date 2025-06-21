@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct SelectBackgroundView: View {
+    @Environment(\.managedObjectContext) private var viewContext
     @EnvironmentObject var coordinator: AppCoordinator
     @ObservedObject var viewModel: SelectBackgroundViewModel
     
     var body: some View {
-        Text("SelectBackgroundView")
+        VStack(alignment: .leading, spacing: 26) {
+            BackgroundHeaderView()
+            
+            SelectBackgroundSubView(
+                backgrounds: viewModel.backgrounds,
+                onSelect: { situation in
+                    viewModel.selectBackground(situation, coordinator: coordinator)
+                }
+            )
+        }
+        .onAppear {
+            viewModel.fetchSituations(context: viewContext)
+        }
+        .padding(.horizontal, 18)
+        .background(.btlGray90)
     }
 }
 

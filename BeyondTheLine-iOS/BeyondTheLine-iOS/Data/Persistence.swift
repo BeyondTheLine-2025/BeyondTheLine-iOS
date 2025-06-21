@@ -48,14 +48,14 @@ extension PersistenceController {
         situation1.title = "카페"
         
         let situation2 = Situation(context: context)
-        situation1.id = UUID()
-        situation1.title = "편의점"
+        situation2.id = UUID()
+        situation2.title = "편의점"
         
         // MARK: - Customer
         
         let customer1 = Customer(context: context)
         customer1.id = UUID()
-        customer1.name = "손님 이름1"
+        customer1.name = "김민지"
         customer1.age = 24
         customer1.learningCount = 0
         customer1.introMessage = "20대로 보이는 여성 손님이\n카페로 들어왔어요."
@@ -116,6 +116,7 @@ extension PersistenceController {
 
         let simQuiz3 = SimulatorQuiz(context: context)
         simQuiz3.id = UUID()
+        simQuiz3.preText = ""
         simQuiz3.correctAnswer = "감사합니다."
         simQuiz3.wrongAnswer = "......?"
         simQuiz3.isWarning = false

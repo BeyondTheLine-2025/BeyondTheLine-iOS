@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct SelectCustomerSubView: View {
+    var customers: [CustomerModel]
+    var onSelect: (CustomerModel) -> Void
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(spacing: 20) {
+                ForEach(customers) { customer in
+                    CustomerCellView(customer: customer) {
+                        onSelect(customer)
+                    }
+                }
+            }
+            .padding(.horizontal, 18)
+        }
     }
-}
-
-#Preview {
-    SelectCustomerSubView()
 }
