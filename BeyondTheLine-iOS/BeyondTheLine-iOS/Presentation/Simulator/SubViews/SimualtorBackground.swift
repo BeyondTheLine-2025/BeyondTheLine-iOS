@@ -19,12 +19,6 @@ struct SimualtorBackground: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
-            
-            Image(.customerMinjiSmile)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 288)
-                .padding(.top, 85)
         }
     }
 }

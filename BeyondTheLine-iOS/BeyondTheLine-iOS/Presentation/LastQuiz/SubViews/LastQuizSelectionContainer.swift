@@ -28,7 +28,7 @@ struct LastQuizSelectionContainer: View {
                 }
             )
             .disabled(showBottomSheet)
-            .bottomSheet(
+            .beyondTheLineBottomSheet(
                 isPresented: $showBottomSheet,
                 sheetType: sheetType,
                 description: "",
