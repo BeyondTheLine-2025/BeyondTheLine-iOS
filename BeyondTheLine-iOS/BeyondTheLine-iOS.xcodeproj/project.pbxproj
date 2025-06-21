@@ -15,7 +15,6 @@
 		3D28D7572DF3366400136E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D74E2DF3366400136E48 /* Assets.xcassets */; };
 		3D28D7582DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D28D7502DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodeld */; };
 		3D28D7592DF3366400136E48 /* BeyondTheLine_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28D7512DF3366400136E48 /* BeyondTheLine_iOSApp.swift */; };
-		3D28D75A2DF3366400136E48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28D7522DF3366400136E48 /* ContentView.swift */; };
 		3D28D75B2DF3366400136E48 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28D7532DF3366400136E48 /* Persistence.swift */; };
 		3D28D7682DF338A500136E48 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D7672DF338A500136E48 /* Colors.xcassets */; };
 		3D28D7752DF4053400136E48 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3D28D7742DF4053400136E48 /* .swiftlint.yml */; };
@@ -84,7 +83,6 @@
 		3D28D74E2DF3366400136E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D28D74F2DF3366400136E48 /* BeyondTheLine_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BeyondTheLine_iOS.entitlements; sourceTree = "<group>"; };
 		3D28D7512DF3366400136E48 /* BeyondTheLine_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLine_iOSApp.swift; sourceTree = "<group>"; };
-		3D28D7522DF3366400136E48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D28D7532DF3366400136E48 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3D28D7552DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeyondTheLine_iOS.xcdatamodel; sourceTree = "<group>"; };
 		3D28D7672DF338A500136E48 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 		3D28D75D2DF337F900136E48 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				3D28D7522DF3366400136E48 /* ContentView.swift */,
 				3D9C89FB2DFD1FB200FCDD61 /* SelectBackground */,
 				3D9C89FC2DFD1FC600FCDD61 /* SelectCustomer */,
 				3D9C89FD2DFD1FD800FCDD61 /* Simulator */,
@@ -676,7 +673,6 @@
 				3D9C8A712DFDA8B300FCDD61 /* AppRoute.swift in Sources */,
 				3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */,
 				3D9C8A572DFD9AD700FCDD61 /* BridgeModel.swift in Sources */,
-				3D28D75A2DF3366400136E48 /* ContentView.swift in Sources */,
 				3D9C8A272DFD229300FCDD61 /* SelectBackgroundViewModel.swift in Sources */,
 				3D9C89302DFC666000FCDD61 /* BeyondTheLineButtonState.swift in Sources */,
 				3D9C8A022DFD205400FCDD61 /* SelectBackgroundView.swift in Sources */,
