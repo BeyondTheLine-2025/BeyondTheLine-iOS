@@ -36,7 +36,7 @@ struct BeyondTheLineBottomSheetModifier: ViewModifier {
 }
 
 extension View {
-    func bottomSheet(
+    func beyondTheLineBottomSheet(
         isPresented: Binding<Bool>,
         sheetType: BeyondTheLineBottomSheetType,
         description: String,
