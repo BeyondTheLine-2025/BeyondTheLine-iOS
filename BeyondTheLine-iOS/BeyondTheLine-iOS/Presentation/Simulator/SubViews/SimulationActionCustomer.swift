@@ -31,7 +31,7 @@ struct SimulationActionCustomer: View {
                 .frame(width: 288)
                 .padding(.top, 85)
             
-            BeyondTheLineSimulatorSpeechBubble(speechBubbleType: .black, text: text)
+            BeyondTheLineSimulatorSpeechBubble(speechBubbleType: .black)
                 .padding(.bottom, 400)
         }
         .onChange(of: currentStep) { _, newStep in
