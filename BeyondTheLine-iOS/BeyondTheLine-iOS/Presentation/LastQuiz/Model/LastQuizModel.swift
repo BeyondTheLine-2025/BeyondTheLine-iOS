@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct QuizItem: Identifiable {
+    let id: UUID
+    let question: String
+    let answers: [String]
+    let correctAnswerIndex: Int
+}

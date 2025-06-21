@@ -21,7 +21,7 @@ struct BeyondTheLineBottomSheetModifier: ViewModifier {
             if isPresented {
                 BeyondTheLineBottomSheet(
                     sheetType: sheetType,
-                    desctiption: description,
+                    description: description,
                     buttonTitle: buttonTitle
                 ) {
                     withAnimation {
