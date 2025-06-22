@@ -5,24 +5,25 @@
 //  Created by mini on 6/14/25.
 //
 
+import CoreData
 import SwiftUI
 
 struct LastQuizView: View {
-    @EnvironmentObject var coordinator: AppCoordinator
     @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject var coordinator: AppCoordinator
     @ObservedObject var viewModel: LastQuizViewModel
     @State private var currentQuizIndex = 0
     
     var body: some View {
         LastQuizProgressView(viewModel: viewModel)
             .onAppear {
-                viewModel.fetchCustomer(context: viewContext, name: "손님 이름1")
-            } // 앞 단계 완성 후 id로 fetch 하도록 변경 예정
+                viewModel.fetchCustomer(context: viewContext)
+            }
         
         if currentQuizIndex < viewModel.quizItems.count {
             let quizItem = viewModel.quizItems[currentQuizIndex]
             
-            VStack(alignment: .leading, spacing: 60) {
+            VStack(alignment: .leading, spacing: 40) {
                 LastQuizQuestionView(
                     quizItem: quizItem,
                     quizIndex: currentQuizIndex
@@ -35,6 +36,30 @@ struct LastQuizView: View {
                     viewModel: viewModel
                 )
             }
+        }
+    }
+}
+
+struct LastQuizView_Previews: PreviewProvider {
+    static var previews: some View {
+        let persistence = PersistenceController(inMemory: true)
+        let context = persistence.container.viewContext
+    
+        let fetchRequest: NSFetchRequest<Customer> = Customer.fetchRequest()
+        fetchRequest.fetchLimit = 1
+        
+        var customerID: UUID = UUID()
+        
+        if let customers = try? context.fetch(fetchRequest), let firstCustomer = customers.first {
+            customerID = firstCustomer.id ?? UUID()
+        }
+
+        let coordinator = AppCoordinator()
+        let viewModel = LastQuizViewModel(customerID: customerID)
+        return NavigationStack {
+            LastQuizView(viewModel: viewModel)
+                .environment(\.managedObjectContext, context)
+                .environmentObject(coordinator)
         }
     }
 }
