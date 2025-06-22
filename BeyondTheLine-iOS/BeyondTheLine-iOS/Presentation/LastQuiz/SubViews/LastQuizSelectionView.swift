@@ -14,7 +14,7 @@ struct LastQuizSelectionView: View {
     var onSelectAnswer: (Int) -> Void
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 14) {
             ForEach(quizItem.answers.indices, id: \.self) { index in
                 let isIncorrect = incorrectIndices?.contains(index) ?? false
                 let isSelected = selectedIndex == index
@@ -42,6 +42,8 @@ struct LastQuizSelectionView: View {
                 )
             }
             Spacer()
+            
+            LastQuizImageContainer()
         }
         .padding(.horizontal, 18)
     }
