@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct SimulatorItem {
-    let rules: [String]
+struct SimulatorModel {
     let introMessage: String
     let quizs: [SimulatorQuizItem]
 }

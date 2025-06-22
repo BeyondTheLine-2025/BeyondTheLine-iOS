@@ -10,7 +10,7 @@ import SwiftUI
 protocol ModuleFactoryProtocol {
     func makeSelectBackgroundView() -> SelectBackgroundView
     func makeSelectCustomerView(situationID: UUID) -> SelectCustomerView
-    func makeSimulatorView() -> SimulatorView
+    func makeSimulatorView(customerID: UUID) -> SimulatorView
     func makeBridgeView() -> BridgeView
     func makeLastQuizView() -> LastQuizView
     func makeSummaryScriptView() -> SummaryScriptView
@@ -32,8 +32,8 @@ final class ModuleFactory: ModuleFactoryProtocol {
         return view
     }
     
-    func makeSimulatorView() -> SimulatorView {
-        let viewModel = SimulatorViewModel()
+    func makeSimulatorView(customerID: UUID) -> SimulatorView {
+        let viewModel = SimulatorViewModel(customerID: customerID)
         let view = SimulatorView(viewModel: viewModel)
         return view
     }

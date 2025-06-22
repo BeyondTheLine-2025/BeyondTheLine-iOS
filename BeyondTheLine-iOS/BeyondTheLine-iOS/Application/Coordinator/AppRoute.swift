@@ -10,7 +10,7 @@ import Foundation
 enum AppRoute: Hashable {
     case selectBackground
     case selectCustomer(SituationModel.ID)
-    case simulator
+    case simulator(CustomerModel.ID)
     case bridge
     case lastQuiz
     case summary
