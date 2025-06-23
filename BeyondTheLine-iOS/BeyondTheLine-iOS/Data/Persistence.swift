@@ -120,7 +120,7 @@ extension PersistenceController {
 
         let simQuiz3 = SimulatorQuiz(context: context)
         simQuiz3.id = UUID()
-//        simQuiz3.preText = ""
+        simQuiz3.preText = ""
         simQuiz3.correctAnswer = "감사합니다."
         simQuiz3.wrongAnswer = "......?"
         simQuiz3.isWarning = false

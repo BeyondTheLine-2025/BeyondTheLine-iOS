@@ -33,8 +33,7 @@ final class SummaryScriptViewModel: ObservableObject {
                     ]) as? [SimulatorQuiz]) ?? []
                 quizzes = simQuizzes.enumerated().compactMap { idx, quiz in
                     guard let pre = quiz.preText,
-                          let quizSet = quiz.quiz as? Set<Quiz>,
-                          let quizEntity = quizSet.first,
+                          let quizEntity = quiz.quiz,
                           let answers = quizEntity.answers as? [String],
                           let feedbacks = quizEntity.feedbacks as? [String]
                     else { return nil }
