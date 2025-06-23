@@ -21,6 +21,19 @@
 		3D7CDEBC2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */; };
 		3D7CDEBE2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */; };
 		3D7CDEC02E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDEBF2E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift */; };
+		3D7CDF8C2E04344900B1E801 /* customer1_take1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF882E04344900B1E801 /* customer1_take1.wav */; };
+		3D7CDF8D2E04344900B1E801 /* customer1_take2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF892E04344900B1E801 /* customer1_take2.wav */; };
+		3D7CDF8E2E04344900B1E801 /* customer1_take3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF8A2E04344900B1E801 /* customer1_take3.wav */; };
+		3D7CDF8F2E04344900B1E801 /* customer1_take4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF8B2E04344900B1E801 /* customer1_take4.wav */; };
+		3D7CDF912E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDF902E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift */; };
+		3D7CDF932E06514E00B1E801 /* SimualtorBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDF922E06514E00B1E801 /* SimualtorBackground.swift */; };
+		3D7CDF952E0653F600B1E801 /* BeyondTheLineSpeechBubbleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDF942E0653F600B1E801 /* BeyondTheLineSpeechBubbleType.swift */; };
+		3D7CDF972E0681D600B1E801 /* SimulationActionCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDF962E0681D600B1E801 /* SimulationActionCustomer.swift */; };
+		3D7CDF9A2E0683E100B1E801 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF982E0683E100B1E801 /* correct.wav */; };
+		3D7CDF9B2E0683E100B1E801 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF992E0683E100B1E801 /* wrong.wav */; };
+		3D7CDF9D2E06840A00B1E801 /* SoundLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDF9C2E06840A00B1E801 /* SoundLiterals.swift */; };
+		3D7CDF9F2E068DFA00B1E801 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDF9E2E068DFA00B1E801 /* CustomerModel.swift */; };
+		3D7CDFB02E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDFAF2E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift */; };
 		3D9C89242DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */; };
 		3D9C89282DFC5FB800FCDD61 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */; };
 		3D9C892A2DFC5FE800FCDD61 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */; };
@@ -44,11 +57,10 @@
 		3D9C8A272DFD229300FCDD61 /* SelectBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A262DFD229300FCDD61 /* SelectBackgroundViewModel.swift */; };
 		3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A282DFD22A400FCDD61 /* SelectBackgroundSubView.swift */; };
 		3D9C8A2F2DFD22D900FCDD61 /* SelectCustomerSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A2E2DFD22D900FCDD61 /* SelectCustomerSubView.swift */; };
-		3D9C8A332DFD22F000FCDD61 /* SimulatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A322DFD22F000FCDD61 /* SimulatorModel.swift */; };
+		3D9C8A332DFD22F000FCDD61 /* SimulatorCustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A322DFD22F000FCDD61 /* SimulatorCustomerModel.swift */; };
 		3D9C8A412DFD233C00FCDD61 /* LastQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A402DFD233C00FCDD61 /* LastQuizViewModel.swift */; };
 		3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A482DFD236300FCDD61 /* SummaryScriptSubView.swift */; };
-		3D9C8A4B2DFD23B600FCDD61 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A4A2DFD23B600FCDD61 /* CustomerModel.swift */; };
-		3D9C8A512DFD23FF00FCDD61 /* SimulatorSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A502DFD23FF00FCDD61 /* SimulatorSubView.swift */; };
+		3D9C8A512DFD23FF00FCDD61 /* BeyondTheLineSimulatorSpeechBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A502DFD23FF00FCDD61 /* BeyondTheLineSimulatorSpeechBubble.swift */; };
 		3D9C8A532DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A522DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift */; };
 		3D9C8A552DFD9AC000FCDD61 /* SimulatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A542DFD9AC000FCDD61 /* SimulatorViewModel.swift */; };
 		3D9C8A572DFD9AD700FCDD61 /* BridgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A562DFD9AD700FCDD61 /* BridgeModel.swift */; };
@@ -102,6 +114,19 @@
 		3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSimualtorAlertButton.swift; sourceTree = "<group>"; };
 		3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSimualtorAlertButtonState.swift; sourceTree = "<group>"; };
 		3D7CDEBF2E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineQuizAlertModifier.swift; sourceTree = "<group>"; };
+		3D7CDF882E04344900B1E801 /* customer1_take1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = customer1_take1.wav; sourceTree = "<group>"; };
+		3D7CDF892E04344900B1E801 /* customer1_take2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = customer1_take2.wav; sourceTree = "<group>"; };
+		3D7CDF8A2E04344900B1E801 /* customer1_take3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = customer1_take3.wav; sourceTree = "<group>"; };
+		3D7CDF8B2E04344900B1E801 /* customer1_take4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = customer1_take4.wav; sourceTree = "<group>"; };
+		3D7CDF902E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSimulatorDialog.swift; sourceTree = "<group>"; };
+		3D7CDF922E06514E00B1E801 /* SimualtorBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimualtorBackground.swift; sourceTree = "<group>"; };
+		3D7CDF942E0653F600B1E801 /* BeyondTheLineSpeechBubbleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSpeechBubbleType.swift; sourceTree = "<group>"; };
+		3D7CDF962E0681D600B1E801 /* SimulationActionCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationActionCustomer.swift; sourceTree = "<group>"; };
+		3D7CDF982E0683E100B1E801 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
+		3D7CDF992E0683E100B1E801 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
+		3D7CDF9C2E06840A00B1E801 /* SoundLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLiterals.swift; sourceTree = "<group>"; };
+		3D7CDF9E2E068DFA00B1E801 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
+		3D7CDFAF2E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineAudioPlayer.swift; sourceTree = "<group>"; };
 		3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
@@ -126,11 +151,10 @@
 		3D9C8A262DFD229300FCDD61 /* SelectBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBackgroundViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A282DFD22A400FCDD61 /* SelectBackgroundSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBackgroundSubView.swift; sourceTree = "<group>"; };
 		3D9C8A2E2DFD22D900FCDD61 /* SelectCustomerSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCustomerSubView.swift; sourceTree = "<group>"; };
-		3D9C8A322DFD22F000FCDD61 /* SimulatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorModel.swift; sourceTree = "<group>"; };
+		3D9C8A322DFD22F000FCDD61 /* SimulatorCustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorCustomerModel.swift; sourceTree = "<group>"; };
 		3D9C8A402DFD233C00FCDD61 /* LastQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A482DFD236300FCDD61 /* SummaryScriptSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptSubView.swift; sourceTree = "<group>"; };
-		3D9C8A4A2DFD23B600FCDD61 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
-		3D9C8A502DFD23FF00FCDD61 /* SimulatorSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorSubView.swift; sourceTree = "<group>"; };
+		3D9C8A502DFD23FF00FCDD61 /* BeyondTheLineSimulatorSpeechBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineSimulatorSpeechBubble.swift; sourceTree = "<group>"; };
 		3D9C8A522DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCustomerViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A542DFD9AC000FCDD61 /* SimulatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A562DFD9AD700FCDD61 /* BridgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeModel.swift; sourceTree = "<group>"; };
@@ -253,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9C89E52DFD1B9C00FCDD61 /* Literals */,
+				3D7CDFAE2E07B16200B1E801 /* Utils */,
 				3D28D76C2DF3393A00136E48 /* Modifiers */,
 				3D9C892C2DFC60BC00FCDD61 /* Foundations */,
 				3D28D76B2DF3393300136E48 /* Components */,
@@ -265,9 +290,10 @@
 		3D28D7662DF3389600136E48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3D9C89222DFC5F9D00FCDD61 /* Fonts */,
+				3D7CDF872E04342F00B1E801 /* Sounds */,
 				3D28D74E2DF3366400136E48 /* Assets.xcassets */,
 				3D28D7672DF338A500136E48 /* Colors.xcassets */,
-				3D9C89222DFC5F9D00FCDD61 /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -292,6 +318,8 @@
 				3D9C89EC2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift */,
 				3D9C89EA2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift */,
 				3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */,
+				3D7CDF902E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift */,
+				3D9C8A502DFD23FF00FCDD61 /* BeyondTheLineSimulatorSpeechBubble.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -303,6 +331,27 @@
 				3D7CDEBF2E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		3D7CDF872E04342F00B1E801 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3D7CDF882E04344900B1E801 /* customer1_take1.wav */,
+				3D7CDF892E04344900B1E801 /* customer1_take2.wav */,
+				3D7CDF8A2E04344900B1E801 /* customer1_take3.wav */,
+				3D7CDF8B2E04344900B1E801 /* customer1_take4.wav */,
+				3D7CDF982E0683E100B1E801 /* correct.wav */,
+				3D7CDF992E0683E100B1E801 /* wrong.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		3D7CDFAE2E07B16200B1E801 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D7CDFAF2E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3D9C89222DFC5F9D00FCDD61 /* Fonts */ = {
@@ -325,6 +374,7 @@
 				3DC8D0392DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift */,
 				998FD3AA2E07F9CD00773EB5 /* BeyondTheLineScriptBubbleState.swift */,
 				3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */,
+				3D7CDF942E0653F600B1E801 /* BeyondTheLineSpeechBubbleType.swift */,
 			);
 			path = Foundations;
 			sourceTree = "<group>";
@@ -333,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9C89D02DFD194900FCDD61 /* SymbolLiterals.swift */,
+				3D7CDF9C2E06840A00B1E801 /* SoundLiterals.swift */,
 			);
 			path = Literals;
 			sourceTree = "<group>";
@@ -454,7 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				998FD3A02E05293B00773EB5 /* SituationModel.swift */,
-				3D9C8A4A2DFD23B600FCDD61 /* CustomerModel.swift */,
+				3D7CDF9E2E068DFA00B1E801 /* CustomerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -470,7 +521,8 @@
 		3D9C8A1B2DFD218600FCDD61 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C8A502DFD23FF00FCDD61 /* SimulatorSubView.swift */,
+				3D7CDF922E06514E00B1E801 /* SimualtorBackground.swift */,
+				3D7CDF962E0681D600B1E801 /* SimulationActionCustomer.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -478,7 +530,7 @@
 		3D9C8A1C2DFD218C00FCDD61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C8A322DFD22F000FCDD61 /* SimulatorModel.swift */,
+				3D9C8A322DFD22F000FCDD61 /* SimulatorCustomerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -647,6 +699,12 @@
 			files = (
 				3D28D7752DF4053400136E48 /* .swiftlint.yml in Resources */,
 				3D9C892A2DFC5FE800FCDD61 /* Pretendard-Bold.otf in Resources */,
+				3D7CDF8C2E04344900B1E801 /* customer1_take1.wav in Resources */,
+				3D7CDF9A2E0683E100B1E801 /* correct.wav in Resources */,
+				3D7CDF9B2E0683E100B1E801 /* wrong.wav in Resources */,
+				3D7CDF8D2E04344900B1E801 /* customer1_take2.wav in Resources */,
+				3D7CDF8E2E04344900B1E801 /* customer1_take3.wav in Resources */,
+				3D7CDF8F2E04344900B1E801 /* customer1_take4.wav in Resources */,
 				3D28D7682DF338A500136E48 /* Colors.xcassets in Resources */,
 				3D9C89282DFC5FB800FCDD61 /* Pretendard-Regular.otf in Resources */,
 				3D9C89242DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf in Resources */,
@@ -682,7 +740,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C8A332DFD22F000FCDD61 /* SimulatorModel.swift in Sources */,
+				3D9C8A332DFD22F000FCDD61 /* SimulatorCustomerModel.swift in Sources */,
 				3D9C89D52DFD1B6500FCDD61 /* BeyondTheLineBottomSheetModifier.swift in Sources */,
 				3D9C8A162DFD214300FCDD61 /* BackgroundModel.swift in Sources */,
 				3D9C8A5D2DFD9B5000FCDD61 /* LastQuizModel.swift in Sources */,
@@ -691,6 +749,7 @@
 				3D2461222DFBA0A700D9E649 /* BeyondTheLineSelectedButton.swift in Sources */,
 				3D9C89D12DFD194900FCDD61 /* SymbolLiterals.swift in Sources */,
 				998FD3932E041AC800773EB5 /* BackgroundCellView.swift in Sources */,
+				3D7CDF952E0653F600B1E801 /* BeyondTheLineSpeechBubbleType.swift in Sources */,
 				998FD3B12E07FBD900773EB5 /* SummaryPreTextView.swift in Sources */,
 				3D9C8A762DFDACC200FCDD61 /* AppCoordinator.swift in Sources */,
 				CA615F7C2E069C4B00172D37 /* LastQuizImageContainer.swift in Sources */,
@@ -700,7 +759,6 @@
 				3D9C8A0C2DFD208400FCDD61 /* LastQuizView.swift in Sources */,
 				998FD3A12E05295400773EB5 /* SituationModel.swift in Sources */,
 				3D9C89D32DFD19A800FCDD61 /* BeyondTheLineBottomSheetType.swift in Sources */,
-				3D9C8A4B2DFD23B600FCDD61 /* CustomerModel.swift in Sources */,
 				3D9C8A552DFD9AC000FCDD61 /* SimulatorViewModel.swift in Sources */,
 				CA6160A82E015EAC00C16CF5 /* LastQuizSelectionContainer.swift in Sources */,
 				3D9C8A0A2DFD207D00FCDD61 /* BridgeView.swift in Sources */,
@@ -713,6 +771,7 @@
 				998FD3B52E083ABC00773EB5 /* SummaryScriptAnswerView.swift in Sources */,
 				3D9C89E42DFD1B8800FCDD61 /* Text+.swift in Sources */,
 				998FD39B2E0425FC00773EB5 /* CustomerInfoView.swift in Sources */,
+				3D7CDF972E0681D600B1E801 /* SimulationActionCustomer.swift in Sources */,
 				3D7CDEBE2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift in Sources */,
 				3D9C8A712DFDA8B300FCDD61 /* AppRoute.swift in Sources */,
 				3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */,
@@ -721,8 +780,11 @@
 				3D9C8A272DFD229300FCDD61 /* SelectBackgroundViewModel.swift in Sources */,
 				CA6160A42E014AA000C16CF5 /* LastQuizSelectionView.swift in Sources */,
 				3D9C89302DFC666000FCDD61 /* BeyondTheLineButtonState.swift in Sources */,
+				3D7CDF9F2E068DFA00B1E801 /* CustomerModel.swift in Sources */,
+				3D7CDF9D2E06840A00B1E801 /* SoundLiterals.swift in Sources */,
 				3D9C8A022DFD205400FCDD61 /* SelectBackgroundView.swift in Sources */,
 				3D9C8A5B2DFD9AE500FCDD61 /* BridgeViewModel.swift in Sources */,
+				3D7CDF932E06514E00B1E801 /* SimualtorBackground.swift in Sources */,
 				3D24611E2DFB9FAA00D9E649 /* BeyondTheLineButton.swift in Sources */,
 				CA6160A22E0146A200C16CF5 /* LastQuizQuestionView.swift in Sources */,
 				3D9C89ED2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift in Sources */,
@@ -730,11 +792,13 @@
 				3D28D75B2DF3366400136E48 /* Persistence.swift in Sources */,
 				3D9C89EB2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift in Sources */,
 				3D9C8A082DFD207300FCDD61 /* SimulatorView.swift in Sources */,
+				3D7CDFB02E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift in Sources */,
 				3DC8D03A2DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift in Sources */,
 				3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */,
 				3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */,
 				998FD39F2E042B1C00773EB5 /* LearningInfoView.swift in Sources */,
 				3D7CDEC02E00660B00B1E801 /* BeyondTheLineQuizAlertModifier.swift in Sources */,
+				3D7CDF912E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift in Sources */,
 				3D9C8A062DFD206B00FCDD61 /* SelectCustomerView.swift in Sources */,
 				3D9C8A612DFD9B6800FCDD61 /* SummaryScriptViewModel.swift in Sources */,
 				3D9C8A2F2DFD22D900FCDD61 /* SelectCustomerSubView.swift in Sources */,
@@ -742,7 +806,7 @@
 				3D9C8A742DFDA9DB00FCDD61 /* ModuleFactory.swift in Sources */,
 				998FD39D2E042A9E00773EB5 /* CustomerCellContentView.swift in Sources */,
 				3D9C8A5F2DFD9B5F00FCDD61 /* SummaryScriptModel.swift in Sources */,
-				3D9C8A512DFD23FF00FCDD61 /* SimulatorSubView.swift in Sources */,
+				3D9C8A512DFD23FF00FCDD61 /* BeyondTheLineSimulatorSpeechBubble.swift in Sources */,
 				3D2461202DFBA08700D9E649 /* BeyondTheLineBottomSheet.swift in Sources */,
 				3D9C8A112DFD20F100FCDD61 /* SummaryScriptView.swift in Sources */,
 				998FD3AF2E07FBBA00773EB5 /* SummaryScriptContentView.swift in Sources */,

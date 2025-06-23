@@ -23,7 +23,7 @@
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="question" optional="YES" attributeType="String"/>
         <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="lastQuizs" inverseEntity="Customer"/>
-        <relationship name="simulatorQuiz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SimulatorQuiz" inverseName="quizs" inverseEntity="SimulatorQuiz"/>
+        <relationship name="simulatorQuiz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SimulatorQuiz" inverseName="quiz" inverseEntity="SimulatorQuiz"/>
     </entity>
     <entity name="SimulatorQuiz" representedClassName="SimulatorQuiz" syncable="YES" codeGenerationType="class">
         <attribute name="correctAnswer" optional="YES" attributeType="String"/>
@@ -33,7 +33,7 @@
         <attribute name="preText" optional="YES" attributeType="String"/>
         <attribute name="wrongAnswer" optional="YES" attributeType="String"/>
         <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" inverseName="simulatorQuizs" inverseEntity="Customer"/>
-        <relationship name="quizs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Quiz" inverseName="simulatorQuiz" inverseEntity="Quiz"/>
+        <relationship name="quiz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Quiz" inverseName="simulatorQuiz" inverseEntity="Quiz"/>
     </entity>
     <entity name="Situation" representedClassName="Situation" syncable="YES" codeGenerationType="class">
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
