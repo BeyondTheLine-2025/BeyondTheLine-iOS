@@ -12,13 +12,11 @@ struct SelectBackgroundSubView: View {
     let onSelect: (SituationModel) -> Void
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 20) {
-                ForEach(backgrounds) { background in
-                    ForEach(background.sortedSituations) { situation in
-                        BackgroundCellView(situation: situation) {
-                            onSelect(situation)
-                        }
+        VStack(spacing: 20) {
+            ForEach(backgrounds) { background in
+                ForEach(background.sortedSituations) { situation in
+                    BackgroundCellView(situation: situation) {
+                        onSelect(situation)
                     }
                 }
             }
