@@ -13,11 +13,16 @@ final class SummaryScriptViewModel: ObservableObject {
     @Published var quizzes: [SummaryScriptModel] = []
     @Published var feedbacks: [String] = []
 
-    // TODO: - 손님 상항 전달받아 사용하도록 수정
     private var customer: Customer?
+    private let customerID: UUID
+    
+    init(customerID: UUID) {
+        self.customerID = customerID
+    }
 
     func fetchSimulationData(context: NSManagedObjectContext) {
         let request: NSFetchRequest<Customer> = Customer.fetchRequest()
+        request.predicate = NSPredicate(format: "id == %@", customerID as CVarArg)
         request.fetchLimit = 1
         
         do {
@@ -33,8 +38,7 @@ final class SummaryScriptViewModel: ObservableObject {
                     ]) as? [SimulatorQuiz]) ?? []
                 quizzes = simQuizzes.enumerated().compactMap { idx, quiz in
                     guard let pre = quiz.preText,
-                          let quizSet = quiz.quizs as? Set<Quiz>,
-                          let quizEntity = quizSet.first,
+                          let quizEntity = quiz.quiz,
                           let answers = quizEntity.answers as? [String],
                           let feedbacks = quizEntity.feedbacks as? [String]
                     else { return nil }

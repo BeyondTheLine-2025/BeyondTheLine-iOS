@@ -11,9 +11,9 @@ protocol ModuleFactoryProtocol {
     func makeSelectBackgroundView() -> SelectBackgroundView
     func makeSelectCustomerView(situationID: UUID) -> SelectCustomerView
     func makeSimulatorView(customerID: UUID) -> SimulatorView
-    func makeBridgeView() -> BridgeView
+    func makeBridgeView(customerID: UUID, step: BridgeStep) -> BridgeView
     func makeLastQuizView(customerID: UUID) -> LastQuizView
-    func makeSummaryScriptView() -> SummaryScriptView
+    func makeSummaryScriptView(customerID: UUID) -> SummaryScriptView
 }
 
 final class ModuleFactory: ModuleFactoryProtocol {
@@ -38,8 +38,8 @@ final class ModuleFactory: ModuleFactoryProtocol {
         return view
     }
     
-    func makeBridgeView() -> BridgeView {
-        let viewModel = BridgeViewModel(step: .finishSimulator) // 임의로 분기 처리
+    func makeBridgeView(customerID: UUID, step: BridgeStep) -> BridgeView {
+        let viewModel = BridgeViewModel(step: step, customerID: customerID) // 임의로 분기 처리
         let view = BridgeView(viewModel: viewModel)
         return view
     }
@@ -50,8 +50,8 @@ final class ModuleFactory: ModuleFactoryProtocol {
         return view
     }
     
-    func makeSummaryScriptView() -> SummaryScriptView {
-        let viewModel = SummaryScriptViewModel()
+    func makeSummaryScriptView(customerID: UUID) -> SummaryScriptView {
+        let viewModel = SummaryScriptViewModel(customerID: customerID)
         let view = SummaryScriptView(viewModel: viewModel)
         return view
     }

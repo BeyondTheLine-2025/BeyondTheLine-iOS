@@ -24,12 +24,10 @@ struct BridgeView: View {
             BeyondTheLineButton(
                 title: "확인",
                 buttonState: .abled,
-                action: {})
+                action: {
+                    viewModel.selectNext(coordinator: coordinator)
+                })
         }
         .toolbar(.hidden, for: .navigationBar)
     }
-}
-
-#Preview {
-    BridgeView(viewModel: BridgeViewModel(step: .finishQuiz))
 }

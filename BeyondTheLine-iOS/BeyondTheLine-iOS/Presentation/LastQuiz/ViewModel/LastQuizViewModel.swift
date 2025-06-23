@@ -77,4 +77,8 @@ final class LastQuizViewModel: ObservableObject {
         selectedAnswers[id] = nil
     }
     
+    @MainActor
+    func selectNext(coordinator: AppCoordinator) {
+        coordinator.push(.bridge(customerID, step: .finishQuiz))
+    }
 }

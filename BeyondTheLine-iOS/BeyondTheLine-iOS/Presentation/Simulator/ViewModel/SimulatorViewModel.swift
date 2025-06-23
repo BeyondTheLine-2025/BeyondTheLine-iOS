@@ -33,11 +33,12 @@ final class SimulatorViewModel: ObservableObject {
         do {
             if let customer = try context.fetch(request).first,
                let introMessage = customer.introMessage,
-               let simulatorQuizsSet = customer.simulatorQuizs as? Set<SimulatorQuiz> {
-                
-                let simulatorQuizs = simulatorQuizsSet.sorted { $0.order < $1.order }
+               let simulatorQuizsOrderedSet = customer.simulatorQuizs,
+               let simulatorQuizs = simulatorQuizsOrderedSet.array as? [SimulatorQuiz] {
 
-                let simQuizModels: [SimulatorQuizModel] = simulatorQuizs.compactMap { simQuiz in
+                let sortedSimulatorQuizs = simulatorQuizs.sorted { $0.order < $1.order }
+
+                let simQuizModels: [SimulatorQuizModel] = sortedSimulatorQuizs.compactMap { simQuiz in
                     guard let quiz = simQuiz.quiz,
                           let question = quiz.question,
                           let answers = quiz.answers as? [String],
@@ -78,6 +79,6 @@ final class SimulatorViewModel: ObservableObject {
     
     @MainActor
     func pushToBridgeView(coordinator: AppCoordinator) {
-        coordinator.push(.bridge)
+        coordinator.push(.bridge(customerID, step: .finishSimulator))
     }
 }

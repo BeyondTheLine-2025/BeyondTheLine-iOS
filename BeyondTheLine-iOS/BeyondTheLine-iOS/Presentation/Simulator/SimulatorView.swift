@@ -45,7 +45,7 @@ struct SimulatorView: View {
                 correctAnswerText: $correctAnswerText,
                 currectReactionIndex: $currentReactionIndex,
                 text: (isShowBlackSpeechBubble ? currentSimQuiz?.wrongAnswer : currentSimQuiz?.preText ?? "") ?? "",
-                soundResource: currentSimQuiz?.preText == nil ? nil : SoundLiterals.customer1Take1,
+                soundResource: (currentSimQuiz?.preText?.isEmpty != false) ? nil : SoundLiterals.customer1Take1,
                 isWarning: currentSimQuiz?.isWarning ?? false,
                 onAudioFinished: {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
