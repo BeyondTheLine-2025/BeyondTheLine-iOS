@@ -82,6 +82,7 @@
 		998FD39D2E042A9E00773EB5 /* CustomerCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */; };
 		998FD39F2E042B1C00773EB5 /* LearningInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39E2E042B0000773EB5 /* LearningInfoView.swift */; };
 		998FD3A12E05295400773EB5 /* SituationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3A02E05293B00773EB5 /* SituationModel.swift */; };
+		998FD4002E09A89300773EB5 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3FF2E09A87500773EB5 /* BackgroundImageView.swift */; };
 		CA615F7C2E069C4B00172D37 /* LastQuizImageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA615F7B2E069C4B00172D37 /* LastQuizImageContainer.swift */; };
 		998FD3AB2E07F9F600773EB5 /* BeyondTheLineScriptBubbleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3AA2E07F9CD00773EB5 /* BeyondTheLineScriptBubbleState.swift */; };
 		998FD3AD2E07FB9300773EB5 /* SummaryFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3AC2E07FB8600773EB5 /* SummaryFeedbackView.swift */; };
@@ -176,6 +177,7 @@
 		998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCellContentView.swift; sourceTree = "<group>"; };
 		998FD39E2E042B0000773EB5 /* LearningInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningInfoView.swift; sourceTree = "<group>"; };
 		998FD3A02E05293B00773EB5 /* SituationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationModel.swift; sourceTree = "<group>"; };
+		998FD3FF2E09A87500773EB5 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		CA615F7B2E069C4B00172D37 /* LastQuizImageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizImageContainer.swift; sourceTree = "<group>"; };
 		998FD3AA2E07F9CD00773EB5 /* BeyondTheLineScriptBubbleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineScriptBubbleState.swift; sourceTree = "<group>"; };
 		998FD3AC2E07FB8600773EB5 /* SummaryFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryFeedbackView.swift; sourceTree = "<group>"; };
@@ -467,6 +469,7 @@
 			children = (
 				998FD3942E041B9A00773EB5 /* BackgroundHeaderView.swift */,
 				998FD3922E041AAE00773EB5 /* BackgroundCellView.swift */,
+				998FD3FF2E09A87500773EB5 /* BackgroundImageView.swift */,
 				3D9C8A282DFD22A400FCDD61 /* SelectBackgroundSubView.swift */,
 			);
 			path = SubViews;
@@ -794,6 +797,7 @@
 				3D9C8A082DFD207300FCDD61 /* SimulatorView.swift in Sources */,
 				3D7CDFB02E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift in Sources */,
 				3DC8D03A2DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift in Sources */,
+				998FD4002E09A89300773EB5 /* BackgroundImageView.swift in Sources */,
 				3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */,
 				3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */,
 				998FD39F2E042B1C00773EB5 /* LearningInfoView.swift in Sources */,
