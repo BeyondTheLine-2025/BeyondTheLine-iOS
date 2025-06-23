@@ -9,9 +9,10 @@ import SwiftUI
 
 struct BeyondTheLineQuizAlertModifier: ViewModifier {
     @Binding var isPresented: Bool
+    @Binding var disabledIndices: [Int]
     let question: String
     let options: [String]
-    let onSelect: () -> Void
+    let onSelect: (Int) -> Void
 
     func body(content: Content) -> some View {
         ZStack {
@@ -21,8 +22,9 @@ struct BeyondTheLineQuizAlertModifier: ViewModifier {
                 BeyondTheLineQuizAlert(
                     question: question,
                     options: options,
-                    onSelect: {
-                        onSelect()
+                    disabledIndices: $disabledIndices,
+                    onSelect: { selectIndex in
+                        onSelect(selectIndex)
                         isPresented = false
                     }
                 )
@@ -35,13 +37,15 @@ struct BeyondTheLineQuizAlertModifier: ViewModifier {
 extension View {
     func beyondTheLineQuizAlert(
         isPresented: Binding<Bool>,
+        disabledIndices: Binding<[Int]>,
         question: String,
         options: [String],
-        onSelect: @escaping () -> Void
+        onSelect: @escaping (Int) -> Void
     ) -> some View {
         modifier(
             BeyondTheLineQuizAlertModifier(
                 isPresented: isPresented,
+                disabledIndices: disabledIndices,
                 question: question,
                 options: options,
                 onSelect: onSelect

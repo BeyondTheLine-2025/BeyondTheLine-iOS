@@ -40,7 +40,6 @@ final class SelectCustomerViewModel: ObservableObject {
     
     @MainActor
     func selectCustomer(_ customer: CustomerModel, coordinator: AppCoordinator) {
-        // TODO: - Simulation 뷰 연결 필요에 맞게 customer 이용
-        coordinator.push(.simulator)
+        coordinator.push(.simulator(customer.id))
     }
 }

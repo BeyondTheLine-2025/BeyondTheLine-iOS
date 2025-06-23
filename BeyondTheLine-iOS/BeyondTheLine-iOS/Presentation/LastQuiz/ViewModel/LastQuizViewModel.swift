@@ -10,11 +10,17 @@ import Foundation
 import SwiftUI
 
 final class LastQuizViewModel: ObservableObject {
+    private let customerID: UUID
+    
     @Published var quizItems: [QuizItem] = []
     @Published var selectedAnswers: [UUID: Int] = [:]
     @Published var incorrectAnswers: [UUID: Set<Int>] = [:]
     @Published var currentSelectedIndex: Int?
     @Published var currentSheetType: BeyondTheLineBottomSheetType?
+    
+    init(customerID: UUID) {
+        self.customerID = customerID
+    }
     
     var progress: Double {
         guard !quizItems.isEmpty else { return 0.0 }
@@ -27,9 +33,9 @@ final class LastQuizViewModel: ObservableObject {
         return Double(correctCount) / Double(quizItems.count)
     }
     
-    func fetchCustomer(context: NSManagedObjectContext, name: String) {
+    func fetchCustomer(context: NSManagedObjectContext) {
         let request: NSFetchRequest<Customer> = Customer.fetchRequest()
-        request.predicate = NSPredicate(format: "name == %@", name)
+        request.predicate = NSPredicate(format: "id == %@", customerID as CVarArg)
         request.fetchLimit = 1
         
         do {

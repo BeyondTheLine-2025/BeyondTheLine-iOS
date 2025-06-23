@@ -23,7 +23,9 @@ struct BeyondTheLineSimualtorAlertButton: View {
     }
 
     var body: some View {
-        Button(action: action) {
+        Button(
+            action: { action() }
+        ) {
             HStack {
                 Spacer()
                 Text(title)

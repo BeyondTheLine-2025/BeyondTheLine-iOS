@@ -21,6 +21,7 @@ struct LastQuizQuestionView: View {
                 .font(.title1)
                 .multilineTextAlignment(.leading)
                 .foregroundStyle(.btlBlack)
+                .lineSpacing(4)
                 .lineLimit(nil)
                 .fixedSize(horizontal: false, vertical: true)
         }
