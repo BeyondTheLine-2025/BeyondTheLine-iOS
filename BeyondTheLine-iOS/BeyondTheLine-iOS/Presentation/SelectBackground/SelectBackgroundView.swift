@@ -13,20 +13,23 @@ struct SelectBackgroundView: View {
     @ObservedObject var viewModel: SelectBackgroundViewModel
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 26) {
-            BackgroundHeaderView()
-            
-            SelectBackgroundSubView(
-                backgrounds: viewModel.backgrounds,
-                onSelect: { situation in
-                    viewModel.selectBackground(situation, coordinator: coordinator)
-                }
-            )
+        ScrollView {
+            VStack(alignment: .leading, spacing: 26) {
+                BackgroundHeaderView()
+                
+                SelectBackgroundSubView(
+                    backgrounds: viewModel.backgrounds,
+                    onSelect: { situation in
+                        viewModel.selectBackground(situation, coordinator: coordinator)
+                    }
+                )
+            }
         }
         .onAppear {
             viewModel.fetchSituations(context: viewContext)
         }
         .padding(.horizontal, 18)
+        .padding(.top, 1)
         .background(.btlGray90)
     }
 }

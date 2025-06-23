@@ -10,7 +10,8 @@ import SwiftUI
 struct BeyondTheLineQuizAlert: View {
     let question: String
     let options: [String]
-    let onSelect: () -> Void
+    @Binding var disabledIndices: [Int]
+    let onSelect: (Int) -> Void
 
     var body: some View {
         ZStack {
@@ -28,11 +29,11 @@ struct BeyondTheLineQuizAlert: View {
                 }
 
                 VStack(spacing: 16) {
-                    ForEach(options, id: \.self) { option in
+                    ForEach(options.indices, id: \.self) { index in
                         BeyondTheLineSimualtorAlertButton(
-                            title: option,
-                            buttonState: .basic,
-                            action: onSelect
+                            title: options[index],
+                            buttonState: !disabledIndices.contains(index) ? .basic : .disabled,
+                            action: { onSelect(index) }
                         )
                     }
                 }
@@ -51,6 +52,7 @@ struct BeyondTheLineQuizAlert: View {
     BeyondTheLineQuizAlert(
         question: "어떻게 답하는게 좋을까요?",
         options: ["잠깐만요, 너무 많아서 잘 모르겠는데요?", "우유만 두유로 바꾸면 되는 거죠?", "아이스 바닐라라떼에 샷 2번, 시럽은 빼고,\n우유는 두유로, 얼음은 적게 맞으실까요?"],
-        onSelect: {}
+        disabledIndices: .constant([]),
+        onSelect: { _ in }
     )
 }

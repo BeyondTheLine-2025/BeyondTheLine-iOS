@@ -15,16 +15,9 @@ struct BackgroundCellView: View {
         VStack(alignment: .center) {
             // TODO: - 배경 선택지 늘어나면 이미지 처리 개선
             if situation.title == "카페" {
-                Image(.backgroundCafe)
-                    .cornerRadius(12)
-                    .frame(height: 180)
-                    .padding(.bottom, 14)
+                BackgroundImageView(imageName: "backgroundCafe")
             } else {
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(.btlGray90)
-                    .frame(height: 180)
-                    .overlay(Text("이미지").foregroundColor(.white))
-                    .padding(.bottom, 14)
+                BackgroundImageView(imageName: "backgroundStore")
             }
 
             Text("\(situation.title)")
