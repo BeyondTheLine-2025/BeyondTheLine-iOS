@@ -72,6 +72,7 @@ extension PersistenceController {
         simQuiz1.correctAnswer = "네 맞아요~ 완전 감사해요!"
         simQuiz1.wrongAnswer = "......?"
         simQuiz1.isWarning = false
+        simQuiz1.order = 0
         
         let quiz1 = Quiz(context: context)
         quiz1.id = UUID()
@@ -87,6 +88,7 @@ extension PersistenceController {
             "일부만 확인하면 나머지 요청을 놓치기 쉬워요.\n전체 요청을 정리해서 확인하는 편이 좋아요.",
             "고객의 요청을 정확히 정리해 복창하는 방식은\n실수를 줄이고, 신뢰를 줍니다."
         ] as NSArray
+        simQuiz1.quiz = quiz1
         
         // MARK: - Simulator Quiz (2)
 
@@ -96,6 +98,7 @@ extension PersistenceController {
         simQuiz2.correctAnswer = "그럼 저지방으로 바꿔주세요."
         simQuiz2.wrongAnswer = "......?"
         simQuiz2.isWarning = true
+        simQuiz2.order = 1
         
         let quiz2 = Quiz(context: context)
         quiz2.id = UUID()
@@ -111,15 +114,16 @@ extension PersistenceController {
             "대안과 선택지를 함께 제시하는 방식은\n고객의 불편을 줄여줍니다.",
             "고객의 선택권을 무시하는 응답입니다."
         ] as NSArray
+        simQuiz2.quiz = quiz2
         
         // MARK: - Simulator Quiz (3)
 
         let simQuiz3 = SimulatorQuiz(context: context)
         simQuiz3.id = UUID()
-        simQuiz3.preText = ""
         simQuiz3.correctAnswer = "감사합니다."
         simQuiz3.wrongAnswer = "......?"
         simQuiz3.isWarning = false
+        simQuiz3.order = 2
         
         let quiz3 = Quiz(context: context)
         quiz3.id = UUID()
@@ -135,6 +139,7 @@ extension PersistenceController {
             "농담처럼 들릴 수 있지만, 고객이 부담을 느낄 수 있어요.",
             "빠른 응대처럼 보일 수 있으나, 친절도가 낮아 보여요."
         ] as NSArray
+        simQuiz3.quiz = quiz3
         
         // MARK: - Last Quiz (1)
         

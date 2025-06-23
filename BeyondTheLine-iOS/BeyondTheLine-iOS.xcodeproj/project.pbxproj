@@ -33,6 +33,7 @@
 		3D7CDF9B2E0683E100B1E801 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D7CDF992E0683E100B1E801 /* wrong.wav */; };
 		3D7CDF9D2E06840A00B1E801 /* SoundLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDF9C2E06840A00B1E801 /* SoundLiterals.swift */; };
 		3D7CDF9F2E068DFA00B1E801 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDF9E2E068DFA00B1E801 /* CustomerModel.swift */; };
+		3D7CDFB02E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CDFAF2E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift */; };
 		3D9C89242DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */; };
 		3D9C89282DFC5FB800FCDD61 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */; };
 		3D9C892A2DFC5FE800FCDD61 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */; };
@@ -116,6 +117,7 @@
 		3D7CDF992E0683E100B1E801 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
 		3D7CDF9C2E06840A00B1E801 /* SoundLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundLiterals.swift; sourceTree = "<group>"; };
 		3D7CDF9E2E068DFA00B1E801 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
+		3D7CDFAF2E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineAudioPlayer.swift; sourceTree = "<group>"; };
 		3D9C89232DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		3D9C89262DFC5FB800FCDD61 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		3D9C89292DFC5FE800FCDD61 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9C89E52DFD1B9C00FCDD61 /* Literals */,
+				3D7CDFAE2E07B16200B1E801 /* Utils */,
 				3D28D76C2DF3393A00136E48 /* Modifiers */,
 				3D9C892C2DFC60BC00FCDD61 /* Foundations */,
 				3D28D76B2DF3393300136E48 /* Components */,
@@ -322,6 +325,14 @@
 				3D7CDF992E0683E100B1E801 /* wrong.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		3D7CDFAE2E07B16200B1E801 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D7CDFAF2E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3D9C89222DFC5F9D00FCDD61 /* Fonts */ = {
@@ -746,6 +757,7 @@
 				3D28D75B2DF3366400136E48 /* Persistence.swift in Sources */,
 				3D9C89EB2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift in Sources */,
 				3D9C8A082DFD207300FCDD61 /* SimulatorView.swift in Sources */,
+				3D7CDFB02E07B17A00B1E801 /* BeyondTheLineAudioPlayer.swift in Sources */,
 				3DC8D03A2DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift in Sources */,
 				3D9C8A492DFD236300FCDD61 /* SummaryScriptSubView.swift in Sources */,
 				3D9C8A782DFDACF000FCDD61 /* RootNavigationView.swift in Sources */,

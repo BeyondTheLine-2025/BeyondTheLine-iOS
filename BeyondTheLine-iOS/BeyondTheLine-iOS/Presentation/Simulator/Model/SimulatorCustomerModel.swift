@@ -9,11 +9,18 @@ import Foundation
 
 struct SimulatorModel {
     let introMessage: String
-    let quizs: [SimulatorQuizItem]
+    let simQuizs: [SimulatorQuizModel]
 }
 
-struct SimulatorQuizItem: Identifiable {
-    let id: UUID
+struct SimulatorQuizModel {
+    let preText: String?
+    let quiz: QuizModel
+    let wrongAnswer: String
+    let correctAnswer: String
+    let isWarning: Bool
+}
+
+struct QuizModel {
     let question: String
     let answers: [String]
     let correctAnswerIndex: Int
