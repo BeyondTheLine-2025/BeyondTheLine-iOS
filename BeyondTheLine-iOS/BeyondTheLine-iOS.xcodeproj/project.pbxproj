@@ -64,7 +64,7 @@
 		3D9C8A532DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A522DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift */; };
 		3D9C8A552DFD9AC000FCDD61 /* SimulatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A542DFD9AC000FCDD61 /* SimulatorViewModel.swift */; };
 		3D9C8A572DFD9AD700FCDD61 /* BridgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A562DFD9AD700FCDD61 /* BridgeModel.swift */; };
-		3D9C8A592DFD9ADE00FCDD61 /* BridgeSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A582DFD9ADE00FCDD61 /* BridgeSubView.swift */; };
+		3D9C8A592DFD9ADE00FCDD61 /* BridgeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A582DFD9ADE00FCDD61 /* BridgeContentView.swift */; };
 		3D9C8A5B2DFD9AE500FCDD61 /* BridgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A5A2DFD9AE500FCDD61 /* BridgeViewModel.swift */; };
 		3D9C8A5D2DFD9B5000FCDD61 /* LastQuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A5C2DFD9B5000FCDD61 /* LastQuizModel.swift */; };
 		3D9C8A5F2DFD9B5F00FCDD61 /* SummaryScriptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C8A5E2DFD9B5F00FCDD61 /* SummaryScriptModel.swift */; };
@@ -82,6 +82,11 @@
 		998FD39D2E042A9E00773EB5 /* CustomerCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */; };
 		998FD39F2E042B1C00773EB5 /* LearningInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39E2E042B0000773EB5 /* LearningInfoView.swift */; };
 		998FD3A12E05295400773EB5 /* SituationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3A02E05293B00773EB5 /* SituationModel.swift */; };
+		CA0C41E52E099BF100658BC9 /* BeyondTheLineBridgeViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C41E42E099BF100658BC9 /* BeyondTheLineBridgeViewType.swift */; };
+		CA0C41E92E09A62F00658BC9 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CA0C41E82E09A62F00658BC9 /* Lottie */; };
+		CA0C41ED2E09A81900658BC9 /* BeyondTheLineLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C41EC2E09A81900658BC9 /* BeyondTheLineLottieView.swift */; };
+		CA0C41F12E09AB1900658BC9 /* bridge_finishSimulation.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0C41F02E09AB1900658BC9 /* bridge_finishSimulation.json */; };
+		CA0C41F32E09ABA300658BC9 /* BridgeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C41F22E09ABA300658BC9 /* BridgeImageView.swift */; };
 		998FD4002E09A89300773EB5 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3FF2E09A87500773EB5 /* BackgroundImageView.swift */; };
 		CA615F7C2E069C4B00172D37 /* LastQuizImageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA615F7B2E069C4B00172D37 /* LastQuizImageContainer.swift */; };
 		998FD3AB2E07F9F600773EB5 /* BeyondTheLineScriptBubbleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3AA2E07F9CD00773EB5 /* BeyondTheLineScriptBubbleState.swift */; };
@@ -159,7 +164,7 @@
 		3D9C8A522DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCustomerViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A542DFD9AC000FCDD61 /* SimulatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A562DFD9AD700FCDD61 /* BridgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeModel.swift; sourceTree = "<group>"; };
-		3D9C8A582DFD9ADE00FCDD61 /* BridgeSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeSubView.swift; sourceTree = "<group>"; };
+		3D9C8A582DFD9ADE00FCDD61 /* BridgeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeContentView.swift; sourceTree = "<group>"; };
 		3D9C8A5A2DFD9AE500FCDD61 /* BridgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewModel.swift; sourceTree = "<group>"; };
 		3D9C8A5C2DFD9B5000FCDD61 /* LastQuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizModel.swift; sourceTree = "<group>"; };
 		3D9C8A5E2DFD9B5F00FCDD61 /* SummaryScriptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptModel.swift; sourceTree = "<group>"; };
@@ -177,6 +182,10 @@
 		998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCellContentView.swift; sourceTree = "<group>"; };
 		998FD39E2E042B0000773EB5 /* LearningInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningInfoView.swift; sourceTree = "<group>"; };
 		998FD3A02E05293B00773EB5 /* SituationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationModel.swift; sourceTree = "<group>"; };
+		CA0C41E42E099BF100658BC9 /* BeyondTheLineBridgeViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineBridgeViewType.swift; sourceTree = "<group>"; };
+		CA0C41EC2E09A81900658BC9 /* BeyondTheLineLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineLottieView.swift; sourceTree = "<group>"; };
+		CA0C41F02E09AB1900658BC9 /* bridge_finishSimulation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bridge_finishSimulation.json; sourceTree = "<group>"; };
+		CA0C41F22E09ABA300658BC9 /* BridgeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeImageView.swift; sourceTree = "<group>"; };
 		998FD3FF2E09A87500773EB5 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		CA615F7B2E069C4B00172D37 /* LastQuizImageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizImageContainer.swift; sourceTree = "<group>"; };
 		998FD3AA2E07F9CD00773EB5 /* BeyondTheLineScriptBubbleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineScriptBubbleState.swift; sourceTree = "<group>"; };
@@ -198,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0C41E92E09A62F00658BC9 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +302,7 @@
 		3D28D7662DF3389600136E48 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CA0C41E62E099E0300658BC9 /* Lotties */,
 				3D9C89222DFC5F9D00FCDD61 /* Fonts */,
 				3D7CDF872E04342F00B1E801 /* Sounds */,
 				3D28D74E2DF3366400136E48 /* Assets.xcassets */,
@@ -320,6 +331,7 @@
 				3D9C89EC2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift */,
 				3D9C89EA2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift */,
 				3D7CDEBB2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift */,
+				CA0C41EC2E09A81900658BC9 /* BeyondTheLineLottieView.swift */,
 				3D7CDF902E04359D00B1E801 /* BeyondTheLineSimulatorDialog.swift */,
 				3D9C8A502DFD23FF00FCDD61 /* BeyondTheLineSimulatorSpeechBubble.swift */,
 			);
@@ -376,6 +388,7 @@
 				3DC8D0392DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift */,
 				998FD3AA2E07F9CD00773EB5 /* BeyondTheLineScriptBubbleState.swift */,
 				3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */,
+				CA0C41E42E099BF100658BC9 /* BeyondTheLineBridgeViewType.swift */,
 				3D7CDF942E0653F600B1E801 /* BeyondTheLineSpeechBubbleType.swift */,
 			);
 			path = Foundations;
@@ -549,7 +562,8 @@
 		3D9C8A1E2DFD219E00FCDD61 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C8A582DFD9ADE00FCDD61 /* BridgeSubView.swift */,
+				3D9C8A582DFD9ADE00FCDD61 /* BridgeContentView.swift */,
+				CA0C41F22E09ABA300658BC9 /* BridgeImageView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -638,6 +652,14 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		CA0C41E62E099E0300658BC9 /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				CA0C41F02E09AB1900658BC9 /* bridge_finishSimulation.json */,
+			);
+			path = Lotties;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -656,6 +678,7 @@
 			);
 			name = "BeyondTheLine-iOS";
 			packageProductDependencies = (
+				CA0C41E82E09A62F00658BC9 /* Lottie */,
 			);
 			productName = "BeyondTheLine-iOS";
 			productReference = 3D28D7352DF3362C00136E48 /* BeyondTheLine-iOS.app */;
@@ -685,6 +708,9 @@
 			);
 			mainGroup = 3D28D72C2DF3362C00136E48;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CA0C41E72E09A62F00658BC9 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3D28D7362DF3362C00136E48 /* Products */;
 			projectDirPath = "";
@@ -712,6 +738,7 @@
 				3D9C89282DFC5FB800FCDD61 /* Pretendard-Regular.otf in Resources */,
 				3D9C89242DFC5FAB00FCDD61 /* Pretendard-SemiBold.otf in Resources */,
 				3D28D7562DF3366400136E48 /* Preview Assets.xcassets in Resources */,
+				CA0C41F12E09AB1900658BC9 /* bridge_finishSimulation.json in Resources */,
 				3D28D7572DF3366400136E48 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -760,9 +787,11 @@
 				CA6160A62E01508E00C16CF5 /* LastQuizProgressView.swift in Sources */,
 				3D9C89E72DFD1F0900FCDD61 /* BeyondTheLineNavigationBar.swift in Sources */,
 				3D9C8A0C2DFD208400FCDD61 /* LastQuizView.swift in Sources */,
+				CA0C41F32E09ABA300658BC9 /* BridgeImageView.swift in Sources */,
 				998FD3A12E05295400773EB5 /* SituationModel.swift in Sources */,
 				3D9C89D32DFD19A800FCDD61 /* BeyondTheLineBottomSheetType.swift in Sources */,
 				3D9C8A552DFD9AC000FCDD61 /* SimulatorViewModel.swift in Sources */,
+				CA0C41ED2E09A81900658BC9 /* BeyondTheLineLottieView.swift in Sources */,
 				CA6160A82E015EAC00C16CF5 /* LastQuizSelectionContainer.swift in Sources */,
 				3D9C8A0A2DFD207D00FCDD61 /* BridgeView.swift in Sources */,
 				3D28D7592DF3366400136E48 /* BeyondTheLine_iOSApp.swift in Sources */,
@@ -778,6 +807,7 @@
 				3D7CDEBE2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift in Sources */,
 				3D9C8A712DFDA8B300FCDD61 /* AppRoute.swift in Sources */,
 				3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */,
+				CA0C41E52E099BF100658BC9 /* BeyondTheLineBridgeViewType.swift in Sources */,
 				3D9C8A572DFD9AD700FCDD61 /* BridgeModel.swift in Sources */,
 				998FD3B92E09048400773EB5 /* SummaryScriptAnswerSubView.swift in Sources */,
 				3D9C8A272DFD229300FCDD61 /* SelectBackgroundViewModel.swift in Sources */,
@@ -806,7 +836,7 @@
 				3D9C8A062DFD206B00FCDD61 /* SelectCustomerView.swift in Sources */,
 				3D9C8A612DFD9B6800FCDD61 /* SummaryScriptViewModel.swift in Sources */,
 				3D9C8A2F2DFD22D900FCDD61 /* SelectCustomerSubView.swift in Sources */,
-				3D9C8A592DFD9ADE00FCDD61 /* BridgeSubView.swift in Sources */,
+				3D9C8A592DFD9ADE00FCDD61 /* BridgeContentView.swift in Sources */,
 				3D9C8A742DFDA9DB00FCDD61 /* ModuleFactory.swift in Sources */,
 				998FD39D2E042A9E00773EB5 /* CustomerCellContentView.swift in Sources */,
 				3D9C8A5F2DFD9B5F00FCDD61 /* SummaryScriptModel.swift in Sources */,
@@ -1045,6 +1075,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA0C41E72E09A62F00658BC9 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA0C41E82E09A62F00658BC9 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA0C41E72E09A62F00658BC9 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3D28D7502DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodeld */ = {

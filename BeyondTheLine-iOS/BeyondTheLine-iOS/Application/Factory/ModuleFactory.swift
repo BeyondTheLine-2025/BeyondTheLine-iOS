@@ -39,7 +39,7 @@ final class ModuleFactory: ModuleFactoryProtocol {
     }
     
     func makeBridgeView() -> BridgeView {
-        let viewModel = BridgeViewModel()
+        let viewModel = BridgeViewModel(step: .finishSimulator) // 임의로 분기 처리
         let view = BridgeView(viewModel: viewModel)
         return view
     }
