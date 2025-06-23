@@ -12,7 +12,7 @@ protocol ModuleFactoryProtocol {
     func makeSelectCustomerView(situationID: UUID) -> SelectCustomerView
     func makeSimulatorView() -> SimulatorView
     func makeBridgeView() -> BridgeView
-    func makeLastQuizView() -> LastQuizView
+    func makeLastQuizView(customerID: UUID) -> LastQuizView
     func makeSummaryScriptView() -> SummaryScriptView
 }
 
@@ -44,8 +44,8 @@ final class ModuleFactory: ModuleFactoryProtocol {
         return view
     }
     
-    func makeLastQuizView() -> LastQuizView {
-        let viewModel = LastQuizViewModel()
+    func makeLastQuizView(customerID: UUID) -> LastQuizView {
+        let viewModel = LastQuizViewModel(customerID: customerID)
         let view = LastQuizView(viewModel: viewModel)
         return view
     }
