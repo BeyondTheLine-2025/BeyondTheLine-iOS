@@ -11,7 +11,6 @@ struct SummaryScriptAnswerSubView: View {
     let quiz: SummaryScriptModel
     @Binding var bubbleMaxWidth: CGFloat
     @Binding var answerHeight: CGFloat
-    @Binding var feedbackHeight: CGFloat
 
     var body: some View {
         VStack(alignment: .trailing, spacing: 0) {
@@ -33,21 +32,6 @@ struct SummaryScriptAnswerSubView: View {
             
             if quiz.isFeedbackVisible {
                 BeyondTheLineScriptBubble(text: quiz.feedbackText, type: .feedback)
-                    .background(
-                        GeometryReader { geo in
-                            Color.clear
-                                .onAppear {
-                                    DispatchQueue.main.async {
-                                        feedbackHeight += geo.size.height
-                                    }
-                                }
-                                .onDisappear {
-                                    DispatchQueue.main.async {
-                                        feedbackHeight = 0
-                                    }
-                                }
-                        }
-                    )
                     .frame(width: bubbleMaxWidth)
                     .offset(y: -12)
             }
