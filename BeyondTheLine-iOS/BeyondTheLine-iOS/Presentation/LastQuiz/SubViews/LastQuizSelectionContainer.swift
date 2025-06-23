@@ -10,6 +10,7 @@ import SwiftUI
 struct LastQuizSelectionContainer: View {
     let quizItem: QuizItem
     let totalQuiz: Int
+    let coordinator: AppCoordinator
     @Binding var quizIndex: Int
     @ObservedObject var viewModel: LastQuizViewModel
     @State private var showBottomSheet = false
@@ -44,6 +45,8 @@ struct LastQuizSelectionContainer: View {
                         withAnimation {
                             if quizIndex < totalQuiz - 1 {
                                 quizIndex += 1
+                            } else {
+                                viewModel.selectNext(coordinator: coordinator)
                             }
                         }
                     } else {

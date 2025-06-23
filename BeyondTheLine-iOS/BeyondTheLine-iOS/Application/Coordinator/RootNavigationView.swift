@@ -23,11 +23,14 @@ struct RootNavigationView: View {
                     case .selectBackground: moduleFactory.makeSelectBackgroundView()
                     case .selectCustomer(let situationID):
                         moduleFactory.makeSelectCustomerView(situationID: situationID)
-                    case .simulator(let customerID): moduleFactory.makeSimulatorView(customerID: customerID)
-                    case .bridge: moduleFactory.makeBridgeView()
+                    case .simulator(let customerID):
+                        moduleFactory.makeSimulatorView(customerID: customerID)
+                    case .bridge(let customerID, let BridgeStep):
+                        moduleFactory.makeBridgeView(customerID: customerID, step: BridgeStep)
                     case .lastQuiz(let customerID):
                         moduleFactory.makeLastQuizView(customerID: customerID)
-                    case .summary: moduleFactory.makeSummaryScriptView()
+                    case .summary(let customerID):
+                        moduleFactory.makeSummaryScriptView(customerID: customerID)
                     }
                 }
         }

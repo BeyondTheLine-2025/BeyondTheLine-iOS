@@ -42,7 +42,3 @@ struct SummaryScriptView: View {
         }
     }
 }
-
-#Preview {
-    SummaryScriptView(viewModel: SummaryScriptViewModel())
-}

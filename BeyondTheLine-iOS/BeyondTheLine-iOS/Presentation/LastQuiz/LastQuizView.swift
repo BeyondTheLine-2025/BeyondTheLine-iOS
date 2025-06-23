@@ -32,6 +32,7 @@ struct LastQuizView: View {
                 LastQuizSelectionContainer(
                     quizItem: quizItem,
                     totalQuiz: viewModel.quizItems.count,
+                    coordinator: coordinator,
                     quizIndex: $currentQuizIndex,
                     viewModel: viewModel
                 )

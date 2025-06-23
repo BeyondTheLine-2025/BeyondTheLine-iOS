@@ -11,7 +11,7 @@ enum AppRoute: Hashable {
     case selectBackground
     case selectCustomer(SituationModel.ID)
     case simulator(CustomerModel.ID)
-    case bridge
+    case bridge(CustomerModel.ID, step: BridgeStep)
     case lastQuiz(CustomerModel.ID)
-    case summary
+    case summary(CustomerModel.ID)
 }

@@ -79,6 +79,6 @@ final class SimulatorViewModel: ObservableObject {
     
     @MainActor
     func pushToBridgeView(coordinator: AppCoordinator) {
-        coordinator.push(.bridge)
+        coordinator.push(.bridge(customerID, step: .finishSimulator))
     }
 }
