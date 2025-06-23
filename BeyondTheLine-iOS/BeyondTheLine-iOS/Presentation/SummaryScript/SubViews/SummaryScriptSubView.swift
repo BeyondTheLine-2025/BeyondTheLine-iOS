@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct SummaryScriptSubView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @Binding var quizzes: [SummaryScriptModel]
+    let customerIntro: String
+    let feedbacks: [String]
+    let onToggleFeedback: (SummaryScriptModel) -> Void
 
-#Preview {
-    SummaryScriptSubView()
+    var body: some View {
+        VStack {
+            BeyondTheLineNavigationBar(leadingType: .none, centerType: .title(title: "요약"))
+                .padding(.bottom, 16)
+            
+            ScrollView {
+                SummaryPreTextView(text: customerIntro)
+                
+                ForEach(quizzes) { quiz in
+                    SummaryScriptContentView(quiz: quiz, toggleFeedback: {
+                        onToggleFeedback(quiz)
+                    })
+                }
+                
+                SummaryFeedbackView(feedbacks: feedbacks)
+            }
+        }
+        .background(.btlGray90)
+        .toolbar(.hidden, for: .navigationBar)
+    }
 }
