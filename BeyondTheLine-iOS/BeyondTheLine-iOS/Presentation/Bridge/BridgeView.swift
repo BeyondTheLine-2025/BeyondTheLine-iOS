@@ -10,12 +10,26 @@ import SwiftUI
 struct BridgeView: View {
     @EnvironmentObject var coordinator: AppCoordinator
     @ObservedObject var viewModel: BridgeViewModel
-
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            BeyondTheLineNavigationBar(
+                leadingType: .close(action: {}),
+                centerType: .none)
+            
+            Spacer()
+            
+            BridgeContentView(content: viewModel.content)
+            
+            BeyondTheLineButton(
+                title: "확인",
+                buttonState: .abled,
+                action: {})
+        }
+        .toolbar(.hidden, for: .navigationBar)
     }
 }
 
 #Preview {
-    BridgeView(viewModel: BridgeViewModel())
+    BridgeView(viewModel: BridgeViewModel(step: .finishQuiz))
 }
