@@ -36,6 +36,7 @@ struct LastQuizView: View {
                     viewModel: viewModel
                 )
             }
+            .toolbar(.hidden, for: .navigationBar)
         }
     }
 }
@@ -44,7 +45,7 @@ struct LastQuizView_Previews: PreviewProvider {
     static var previews: some View {
         let persistence = PersistenceController(inMemory: true)
         let context = persistence.container.viewContext
-    
+        
         let fetchRequest: NSFetchRequest<Customer> = Customer.fetchRequest()
         fetchRequest.fetchLimit = 1
         
@@ -53,7 +54,7 @@ struct LastQuizView_Previews: PreviewProvider {
         if let customers = try? context.fetch(fetchRequest), let firstCustomer = customers.first {
             customerID = firstCustomer.id ?? UUID()
         }
-
+        
         let coordinator = AppCoordinator()
         let viewModel = LastQuizViewModel(customerID: customerID)
         return NavigationStack {
