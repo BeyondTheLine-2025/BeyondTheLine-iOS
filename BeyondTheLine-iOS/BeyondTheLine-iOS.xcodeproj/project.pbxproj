@@ -70,6 +70,14 @@
 		998FD39D2E042A9E00773EB5 /* CustomerCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */; };
 		998FD39F2E042B1C00773EB5 /* LearningInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD39E2E042B0000773EB5 /* LearningInfoView.swift */; };
 		998FD3A12E05295400773EB5 /* SituationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3A02E05293B00773EB5 /* SituationModel.swift */; };
+		998FD3AB2E07F9F600773EB5 /* BeyondTheLineScriptBubbleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3AA2E07F9CD00773EB5 /* BeyondTheLineScriptBubbleState.swift */; };
+		998FD3AD2E07FB9300773EB5 /* SummaryFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3AC2E07FB8600773EB5 /* SummaryFeedbackView.swift */; };
+		998FD3AF2E07FBBA00773EB5 /* SummaryScriptContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3AE2E07FBAB00773EB5 /* SummaryScriptContentView.swift */; };
+		998FD3B12E07FBD900773EB5 /* SummaryPreTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3B02E07FBCD00773EB5 /* SummaryPreTextView.swift */; };
+		998FD3B32E08393C00773EB5 /* SummaryBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3B22E08391800773EB5 /* SummaryBackgroundView.swift */; };
+		998FD3B52E083ABC00773EB5 /* SummaryScriptAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3B42E083A6F00773EB5 /* SummaryScriptAnswerView.swift */; };
+		998FD3B72E08FFC800773EB5 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3B62E08FFC000773EB5 /* Array+.swift */; };
+		998FD3B92E09048400773EB5 /* SummaryScriptAnswerSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998FD3B82E09043E00773EB5 /* SummaryScriptAnswerSubView.swift */; };
 		CA6160A22E0146A200C16CF5 /* LastQuizQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6160A12E0146A200C16CF5 /* LastQuizQuestionView.swift */; };
 		CA6160A42E014AA000C16CF5 /* LastQuizSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6160A32E014AA000C16CF5 /* LastQuizSelectionView.swift */; };
 		CA6160A62E01508E00C16CF5 /* LastQuizProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6160A52E01508E00C16CF5 /* LastQuizProgressView.swift */; };
@@ -143,6 +151,14 @@
 		998FD39C2E042A8E00773EB5 /* CustomerCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCellContentView.swift; sourceTree = "<group>"; };
 		998FD39E2E042B0000773EB5 /* LearningInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningInfoView.swift; sourceTree = "<group>"; };
 		998FD3A02E05293B00773EB5 /* SituationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SituationModel.swift; sourceTree = "<group>"; };
+		998FD3AA2E07F9CD00773EB5 /* BeyondTheLineScriptBubbleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondTheLineScriptBubbleState.swift; sourceTree = "<group>"; };
+		998FD3AC2E07FB8600773EB5 /* SummaryFeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryFeedbackView.swift; sourceTree = "<group>"; };
+		998FD3AE2E07FBAB00773EB5 /* SummaryScriptContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptContentView.swift; sourceTree = "<group>"; };
+		998FD3B02E07FBCD00773EB5 /* SummaryPreTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPreTextView.swift; sourceTree = "<group>"; };
+		998FD3B22E08391800773EB5 /* SummaryBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryBackgroundView.swift; sourceTree = "<group>"; };
+		998FD3B42E083A6F00773EB5 /* SummaryScriptAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptAnswerView.swift; sourceTree = "<group>"; };
+		998FD3B62E08FFC000773EB5 /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		998FD3B82E09043E00773EB5 /* SummaryScriptAnswerSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryScriptAnswerSubView.swift; sourceTree = "<group>"; };
 		CA6160A12E0146A200C16CF5 /* LastQuizQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizQuestionView.swift; sourceTree = "<group>"; };
 		CA6160A32E014AA000C16CF5 /* LastQuizSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizSelectionView.swift; sourceTree = "<group>"; };
 		CA6160A52E01508E00C16CF5 /* LastQuizProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastQuizProgressView.swift; sourceTree = "<group>"; };
@@ -257,6 +273,7 @@
 		3D28D76A2DF3391200136E48 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				998FD3B62E08FFC000773EB5 /* Array+.swift */,
 				3D9C89E32DFD1B8800FCDD61 /* Text+.swift */,
 			);
 			path = Extensions;
@@ -304,6 +321,7 @@
 				3D9C89312DFC6F3700FCDD61 /* BeyondTheLineSelectedButtonState.swift */,
 				3D9C89D22DFD19A800FCDD61 /* BeyondTheLineBottomSheetType.swift */,
 				3DC8D0392DFDB8A100C031A0 /* BeyondTheLineNavigationBarType.swift */,
+				998FD3AA2E07F9CD00773EB5 /* BeyondTheLineScriptBubbleState.swift */,
 				3D7CDEBD2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift */,
 			);
 			path = Foundations;
@@ -525,6 +543,12 @@
 		3D9C8A242DFD21E800FCDD61 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				998FD3B22E08391800773EB5 /* SummaryBackgroundView.swift */,
+				998FD3B02E07FBCD00773EB5 /* SummaryPreTextView.swift */,
+				998FD3AE2E07FBAB00773EB5 /* SummaryScriptContentView.swift */,
+				998FD3B42E083A6F00773EB5 /* SummaryScriptAnswerView.swift */,
+				998FD3B82E09043E00773EB5 /* SummaryScriptAnswerSubView.swift */,
+				998FD3AC2E07FB8600773EB5 /* SummaryFeedbackView.swift */,
 				3D9C8A482DFD236300FCDD61 /* SummaryScriptSubView.swift */,
 			);
 			path = SubViews;
@@ -660,9 +684,11 @@
 				3D9C8A162DFD214300FCDD61 /* BackgroundModel.swift in Sources */,
 				3D9C8A5D2DFD9B5000FCDD61 /* LastQuizModel.swift in Sources */,
 				998FD3992E04250500773EB5 /* CustomerCellView.swift in Sources */,
+				998FD3B72E08FFC800773EB5 /* Array+.swift in Sources */,
 				3D2461222DFBA0A700D9E649 /* BeyondTheLineSelectedButton.swift in Sources */,
 				3D9C89D12DFD194900FCDD61 /* SymbolLiterals.swift in Sources */,
 				998FD3932E041AC800773EB5 /* BackgroundCellView.swift in Sources */,
+				998FD3B12E07FBD900773EB5 /* SummaryPreTextView.swift in Sources */,
 				3D9C8A762DFDACC200FCDD61 /* AppCoordinator.swift in Sources */,
 				3D28D7582DF3366400136E48 /* BeyondTheLine_iOS.xcdatamodeld in Sources */,
 				CA6160A62E01508E00C16CF5 /* LastQuizProgressView.swift in Sources */,
@@ -675,15 +701,19 @@
 				CA6160A82E015EAC00C16CF5 /* LastQuizSelectionContainer.swift in Sources */,
 				3D9C8A0A2DFD207D00FCDD61 /* BridgeView.swift in Sources */,
 				3D28D7592DF3366400136E48 /* BeyondTheLine_iOSApp.swift in Sources */,
+				998FD3B32E08393C00773EB5 /* SummaryBackgroundView.swift in Sources */,
+				998FD3AB2E07F9F600773EB5 /* BeyondTheLineScriptBubbleState.swift in Sources */,
 				3D2461242DFBA0B900D9E649 /* BeyondTheLineProgressIndicator.swift in Sources */,
 				3D7CDEBC2E00613000B1E801 /* BeyondTheLineSimualtorAlertButton.swift in Sources */,
 				3D9C892E2DFC60CA00FCDD61 /* Font+.swift in Sources */,
+				998FD3B52E083ABC00773EB5 /* SummaryScriptAnswerView.swift in Sources */,
 				3D9C89E42DFD1B8800FCDD61 /* Text+.swift in Sources */,
 				998FD39B2E0425FC00773EB5 /* CustomerInfoView.swift in Sources */,
 				3D7CDEBE2E00616200B1E801 /* BeyondTheLineSimualtorAlertButtonState.swift in Sources */,
 				3D9C8A712DFDA8B300FCDD61 /* AppRoute.swift in Sources */,
 				3D9C8A292DFD22A400FCDD61 /* SelectBackgroundSubView.swift in Sources */,
 				3D9C8A572DFD9AD700FCDD61 /* BridgeModel.swift in Sources */,
+				998FD3B92E09048400773EB5 /* SummaryScriptAnswerSubView.swift in Sources */,
 				3D9C8A272DFD229300FCDD61 /* SelectBackgroundViewModel.swift in Sources */,
 				CA6160A42E014AA000C16CF5 /* LastQuizSelectionView.swift in Sources */,
 				3D9C89302DFC666000FCDD61 /* BeyondTheLineButtonState.swift in Sources */,
@@ -692,6 +722,7 @@
 				3D24611E2DFB9FAA00D9E649 /* BeyondTheLineButton.swift in Sources */,
 				CA6160A22E0146A200C16CF5 /* LastQuizQuestionView.swift in Sources */,
 				3D9C89ED2DFD1F3A00FCDD61 /* BeyondTheLineScriptBubble.swift in Sources */,
+				998FD3AD2E07FB9300773EB5 /* SummaryFeedbackView.swift in Sources */,
 				3D28D75B2DF3366400136E48 /* Persistence.swift in Sources */,
 				3D9C89EB2DFD1F2600FCDD61 /* BeyondTheLineQuizAlert.swift in Sources */,
 				3D9C8A082DFD207300FCDD61 /* SimulatorView.swift in Sources */,
@@ -710,6 +741,7 @@
 				3D9C8A512DFD23FF00FCDD61 /* SimulatorSubView.swift in Sources */,
 				3D2461202DFBA08700D9E649 /* BeyondTheLineBottomSheet.swift in Sources */,
 				3D9C8A112DFD20F100FCDD61 /* SummaryScriptView.swift in Sources */,
+				998FD3AF2E07FBBA00773EB5 /* SummaryScriptContentView.swift in Sources */,
 				3D9C8A532DFD9AAC00FCDD61 /* SelectCustomerViewModel.swift in Sources */,
 				3D9C8A412DFD233C00FCDD61 /* LastQuizViewModel.swift in Sources */,
 				998FD3972E04243500773EB5 /* SituationBannerView.swift in Sources */,
