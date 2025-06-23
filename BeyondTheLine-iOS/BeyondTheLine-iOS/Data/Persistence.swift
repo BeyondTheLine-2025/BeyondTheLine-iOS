@@ -68,6 +68,7 @@ extension PersistenceController {
         
         let simQuiz1 = SimulatorQuiz(context: context)
         simQuiz1.id = UUID()
+        simQuiz1.order = 1
         simQuiz1.preText = "아이스 바닐라라떼에 샷 2번만 넣어주시고요.\n시럽은 빼고, 우유는 두유로 바꿔주시고,\n얼음은 적게 부탁드릴게요."
         simQuiz1.correctAnswer = "네 맞아요~ 완전 감사해요!"
         simQuiz1.wrongAnswer = "......?"
@@ -86,7 +87,7 @@ extension PersistenceController {
         quiz1.feedbacks = [
             "이런 반응은 고객에게 부담을 줄 수 있어요.\n복잡한 주문일수록 정리해서 복창하는 것이 좋아요.",
             "일부만 확인하면 나머지 요청을 놓치기 쉬워요.\n전체 요청을 정리해서 확인하는 편이 좋아요.",
-            "고객의 요청을 정확히 정리해 복창하는 방식은\n실수를 줄이고, 신뢰를 줍니다."
+            "고객의 요청을 정확히 정리해 복창하는 방식은 실수를 줄이고, 신뢰를 줍니다."
         ] as NSArray
         simQuiz1.quiz = quiz1
         
@@ -94,6 +95,7 @@ extension PersistenceController {
 
         let simQuiz2 = SimulatorQuiz(context: context)
         simQuiz2.id = UUID()
+        simQuiz2.order = 2
         simQuiz2.preText = "옆에서 듣던 동료가\n지금 두유가 품절이라고 얘기했어요."
         simQuiz2.correctAnswer = "그럼 저지방으로 바꿔주세요."
         simQuiz2.wrongAnswer = "......?"
@@ -111,7 +113,7 @@ extension PersistenceController {
         quiz2.answerIndex = 1
         quiz2.feedbacks = [
             "고객의 선택을 제한하는 말투는 지양해야 해요.",
-            "대안과 선택지를 함께 제시하는 방식은\n고객의 불편을 줄여줍니다.",
+            "대안과 선택지를 함께 제시하는 방식은, 고객의 불편을 줄여줍니다.",
             "고객의 선택권을 무시하는 응답입니다."
         ] as NSArray
         simQuiz2.quiz = quiz2
@@ -120,6 +122,8 @@ extension PersistenceController {
 
         let simQuiz3 = SimulatorQuiz(context: context)
         simQuiz3.id = UUID()
+        simQuiz3.order = 3
+        simQuiz3.preText = ""
         simQuiz3.correctAnswer = "감사합니다."
         simQuiz3.wrongAnswer = "......?"
         simQuiz3.isWarning = false
@@ -135,7 +139,7 @@ extension PersistenceController {
         ] as NSArray
         quiz3.answerIndex = 0
         quiz3.feedbacks = [
-            "주문 내용을 잘 이해했음을 표현하고,\n고객의 요청을 존중하는 따뜻한 응답이에요.",
+            "주문 내용을 이해했음을 표현하고, 고객의 요청을 존중하는 따뜻한 응답이에요.",
             "농담처럼 들릴 수 있지만, 고객이 부담을 느낄 수 있어요.",
             "빠른 응대처럼 보일 수 있으나, 친절도가 낮아 보여요."
         ] as NSArray
@@ -170,6 +174,11 @@ extension PersistenceController {
         // MARK: - Add Array
         
         customer1.simulatorQuizs = [simQuiz1, simQuiz2, simQuiz3]
+        
+        simQuiz1.quizs = [quiz1]
+        simQuiz2.quizs = [quiz2]
+        simQuiz3.quizs = [quiz3]
+        
         customer1.lastQuizs = [lastQuiz1, lastQuiz2]
         
         situation1.customers = [customer1]
