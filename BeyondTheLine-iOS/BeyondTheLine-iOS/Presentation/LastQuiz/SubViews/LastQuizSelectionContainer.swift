@@ -15,6 +15,7 @@ struct LastQuizSelectionContainer: View {
     @ObservedObject var viewModel: LastQuizViewModel
     @State private var showBottomSheet = false
     @State private var sheetType: BeyondTheLineBottomSheetType = .correct
+    @StateObject private var audioPlayer = BeyondTheLineAudioPlayer()
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -26,6 +27,11 @@ struct LastQuizSelectionContainer: View {
                     let isCorrect = viewModel.selectAnswer(for: quizItem.id, answerIndex: selected)
                     sheetType = isCorrect ? .correct : .incorrect
                     showBottomSheet = true
+                    
+                    audioPlayer.play(
+                        soundResource: isCorrect ? SoundLiterals.correct : SoundLiterals.wrong,
+                        completion: {}
+                    )
                 }
             )
             .disabled(showBottomSheet)
