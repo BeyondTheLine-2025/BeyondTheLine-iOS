@@ -66,6 +66,7 @@ struct SimulatorView: View {
                         )
                     )
                 )
+                .padding(.top, 59)
                 .frame(height: 110)
                 
                 Spacer()

@@ -76,7 +76,7 @@ extension PersistenceController {
         
         let quiz1 = Quiz(context: context)
         quiz1.id = UUID()
-        quiz1.question = "어덯게 답하는게 좋을까요?"
+        quiz1.question = "어떻게 답하는게 좋을까요?"
         quiz1.answers = [
             "잠깐만요, 너무 많아서 잘 모르겠는데요?",
             "우유만 두유로 바꾸면 되는 거죠?",
@@ -102,7 +102,7 @@ extension PersistenceController {
         
         let quiz2 = Quiz(context: context)
         quiz2.id = UUID()
-        quiz2.question = "어덯게 답하는게 좋을까요?"
+        quiz2.question = "어떻게 답하는게 좋을까요?"
         quiz2.answers = [
             "지금 두유가 없는데\n그냥 다른 음료로 바꾸실래요?",
             "죄송하지만 현재 두유는 품절이라\n저지방우유나 일반우유로 변경 도와드릴까요?",
